@@ -1,0 +1,14 @@
+@import './functions';
+
+// Colours
+$bg-primary: #FBF9F8;
+$dark-gray: #D9D9D9;
+$dark-red: #BB0A00;
+
+// Screen sizes
+$screen-sm: toRem(576);
+$screen-md: toRem(768);
+$screen-lg: toRem(992);
+$screen-xl: toRem(1200);
+$screen-xxl: toRem(1300);
+$screen-full: toRem(1400);

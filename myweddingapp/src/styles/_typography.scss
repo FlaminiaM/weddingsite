@@ -1,0 +1,73 @@
+@import './functions';
+@import './mixins';
+
+@font-face {
+    font-family: 'High Spirited';
+    src: url("./High Spirited.ttf") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+
+$title-font: 'High Spirited', serif;
+$primary-font: 'Cormorant', serif;
+
+body{
+    font-family: $primary-font;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: toRem(76);
+    line-height: 1.2em;
+    margin: 0;
+    font-family: $title-font;
+
+    @include smMinBreakPoint {
+        font-size: toRem(38);
+    }
+}
+
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: toRem(50);
+    line-height: toRem(45);
+
+    @include smMinBreakPoint {
+        font-size: toRem(20);
+        line-height: toRem(24);
+    }
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: toRem(30);
+    line-height: toRem(41);
+    margin: 0;
+
+    @include smMinBreakPoint {
+        font-size: toRem(18);
+        line-height: toRem(24);
+    }
+}
+
+h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: toRem(20);
+    line-height: toRem(32);
+    margin: 0;
+    @include smMinBreakPoint {
+        font-size: toRem(16);
+        line-height: toRem(24);
+    }
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: toRem(20);
+    line-height: toRem(24);
+}
