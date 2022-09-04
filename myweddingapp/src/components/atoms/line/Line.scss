@@ -1,0 +1,22 @@
+@import '../../../styles/_variables';
+
+.line{
+    &--divider{
+        background-color: $gray;
+        &-horizontal{
+            width: 100%;
+            height: toRem(1); 
+        }
+    }
+    &--timeline{
+        background-color: $black;
+        &-horizontal{
+            width: toRem(174);
+            height: toRem(3);
+        }
+        &-vertical{
+            width: toRem(3);
+            height: toRem(325);
+        }
+    }
+}

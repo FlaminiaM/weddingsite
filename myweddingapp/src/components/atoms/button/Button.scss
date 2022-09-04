@@ -1,0 +1,12 @@
+@import '../../../styles/_variables';
+
+.btn{
+    &--primary{
+        width: toRem(240);
+        height: toRem(40);
+        background-color: $white;
+        border: toRem(2) solid $black;
+        color: $black;
+        border-radius: toRem(4);
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
+.menu-item{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: toRem(36);
+    &-link{
+        display: block;
+        padding: 0 toRem(40);
+        text-decoration: none;
+        color: $black;
+        @include smMinBreakPoint {
+            padding: 0 toRem(20);
+        }
+        &:hover{
+           background-color: $light-gray;
+        }
+    }
+}
