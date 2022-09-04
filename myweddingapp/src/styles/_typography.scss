@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'High Spirited';
-    src: url("./High Spirited.ttf") format('truetype');
+    src: url("../assets/fonts/High Spirited.ttf") format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
@@ -17,7 +17,7 @@ body{
 
 h1 {
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: toRem(76);
     line-height: 1.2em;
     margin: 0;
