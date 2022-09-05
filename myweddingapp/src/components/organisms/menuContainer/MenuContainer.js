@@ -15,9 +15,7 @@ function Menu() {
   }, []);
 
   const menuButtonHandler = () => {
-    console.log("hello")
     setIsOpen(!isOpen);
-    console.log(isOpen)
   }
 
   return (
