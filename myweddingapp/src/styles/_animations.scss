@@ -1,0 +1,21 @@
+@-webkit-keyframes arrow-bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%, 60% {
+        -webkit-transform: translateY(-23px);
+        transform: translateY(-23px);
+    }
+}
+@keyframes arrow-bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%, 60% {
+        -webkit-transform: translateY(-23px);
+        transform: translateY(-23px);
+    }
+}
+  

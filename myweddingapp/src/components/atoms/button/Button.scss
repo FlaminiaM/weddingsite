@@ -1,6 +1,10 @@
 @import '../../../styles/_variables';
 
 .btn{
+    transition: all .2s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
     &--primary{
         width: toRem(240);
         height: toRem(40);
@@ -8,5 +12,6 @@
         border: toRem(2) solid $black;
         color: $black;
         border-radius: toRem(4);
+        cursor: pointer;
     }
 }

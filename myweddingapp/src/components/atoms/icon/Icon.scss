@@ -1,11 +1,3 @@
-.icon{
-    &--small{
-        transform: scale(.5);
-    }
-    &--medium{
-        transform: scale(.8);
-    }
-    &--large{
-        transform: scale(1);
-    }
+.bounce{
+    animation: arrow-bounce 4s infinite;
 }
