@@ -18,50 +18,49 @@ body{
 h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: toRem(76);
-    line-height: 1.2em;
+    font-size: toRem(38);
     margin: 0;
     font-family: $title-font;
 
     @include smMinBreakPoint {
-        font-size: toRem(38);
+        font-size: toRem(76);
     }
 }
 
 h2 {
     font-style: normal;
     font-weight: normal;
-    font-size: toRem(50);
-    line-height: toRem(45);
+    font-size: toRem(24);
+    line-height: toRem(20);
 
     @include smMinBreakPoint {
-        font-size: toRem(20);
-        line-height: toRem(24);
+        font-size: toRem(45);
+        line-height: toRem(50);
     }
 }
 
 h3 {
     font-style: normal;
-    font-weight: 600;
-    font-size: toRem(30);
-    line-height: toRem(41);
+    font-weight: normal;
+    font-size: toRem(18);
+    line-height: toRem(24);
     margin: 0;
 
     @include smMinBreakPoint {
-        font-size: toRem(18);
-        line-height: toRem(24);
+        font-size: toRem(30);
+        line-height: toRem(32);
     }
 }
 
 h4 {
     font-style: normal;
     font-weight: normal;
-    font-size: toRem(20);
-    line-height: toRem(32);
+    font-size: toRem(16);
+    line-height: toRem(24);
     margin: 0;
     @include smMinBreakPoint {
-        font-size: toRem(16);
-        line-height: toRem(24);
+        font-size: toRem(20);
+        line-height: toRem(32);
     }
 }
 

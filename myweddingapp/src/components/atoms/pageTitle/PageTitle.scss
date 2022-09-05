@@ -1,0 +1,29 @@
+@import '../../../styles/_variables';
+
+.page-title-container{
+    position: absolute;
+    bottom: 0;
+    padding: 10% 20% 10% 8%;
+    z-index: 1;
+    max-width: 60%;
+
+    &--white{
+        color: $white;
+    }
+    &--black{
+        color: $black;
+    }
+
+    &__title{
+        margin-bottom: $m-md;
+        position: relative;
+        &--with-gif{
+            & img{
+                width: toRem(200);
+                position: absolute;
+                top: toRem(-25);
+                left: toRem(360);
+            }
+        }
+    }
+}

@@ -1,18 +1,17 @@
 import React from 'react';
 import './TwoColumns.scss';
 
+import Overlay from '../../atoms/overlay/Overlay';
+import PageTitle from '../../atoms/pageTitle/PageTitle';
+
 function TwoColumns({sectionLeftContent, sectionRightContent}) {
   
   const currentPageRef = React.useRef("home");
-
   const arrayRefs = React.useRef([]);
   
   React.useEffect(() => {
-        
     window.addEventListener('scroll', scrollHandler);
- 
     return () => window.removeEventListener('scroll', scrollHandler);
-    
   }, []);
 
   const isElementXPercentInViewport = (el, percentVisible) => {
@@ -56,7 +55,9 @@ function TwoColumns({sectionLeftContent, sectionRightContent}) {
 
   const displaySectionsLeft = sectionLeftContent.map((el, i) => (
     <React.Fragment key={el.id}>
-      <div className={`two-columns-layout-left__background-image  ${i === 0 ? "" : "hide"}`} id={el.page} style={{backgroundImage: `url(${el.imageUrl})`}}></div>
+      <div className={`two-columns-layout-left__background-image  ${i === 0 ? "" : "hide"}`} id={el.page} style={{backgroundImage: `url(${el.imageUrl})`}}>
+        <PageTitle title={el.title} subtitle={el.subtitle} textColor={el.pageTitleTextColor} gif={el.gif}/>
+      </div>
     </React.Fragment>
   ))
 
@@ -65,8 +66,7 @@ function TwoColumns({sectionLeftContent, sectionRightContent}) {
     <div className='two-columns-layout'>
         <div className='two-columns-layout-left'>
             {displaySectionsLeft}
-            {/* <div className='two-columns-layout-left__background-image' id="home" style={{backgroundImage: `url(${sectionLeftContent[0].imageUrl})`}}></div>
-            <div className='two-columns-layout-left__background-image hide' id="details" style={{backgroundImage: `url(${sectionLeftContent[1].imageUrl})`}}></div> */}
+            <Overlay />
         </div>
         <div className='two-columns-layout-right'>
             {displaySectionsRight}
