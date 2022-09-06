@@ -8,6 +8,20 @@ import SingleColumn from './components/layout/singleColumn/SingleColumn';
 
 function App() {
   const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 768);
+  
+  React.useEffect(() => {
+    window.addEventListener('resize', checkDevice);
+    return () => window.removeEventListener('resize', checkDevice);
+  });
+  
+  const checkDevice = () => {
+    if(window.innerWidth > 768 && !isDesktop){
+      setIsDesktop(true);
+    } else if(window.innerWidth < 768 && isDesktop){
+      setIsDesktop(false);
+    }
+  }
+
   return (
     <div className="App">
       {/* <div className='App-test'></div> */}
