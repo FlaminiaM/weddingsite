@@ -1,0 +1,8 @@
+.single-column-layout{
+    & .section-intro{
+        &__background-image{
+            position: unset;
+            height: 100vh;
+        }
+    }
+}

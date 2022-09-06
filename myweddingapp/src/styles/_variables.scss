@@ -9,6 +9,8 @@ $white: #FFFFFF;
 $black: #000000;
 $menu-gray:rgba(255,255,255,.6);
 $bg-no-photo: rgb(185, 198, 237);
+$bg-loader: #D4AB9B;
+// $bg-loader: #9BB9D3;
 
 // Screen sizes
 $screen-sm: toRem(576);
@@ -20,7 +22,7 @@ $screen-full: toRem(1400);
 
 // Margins
 $m-xs: toRem(4);
-$m-xs: toRem(8);
+$m-s: toRem(8);
 $m-md: toRem(16);
 $m-lg: toRem(24);
 $m-xl: toRem(32);

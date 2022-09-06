@@ -1,0 +1,17 @@
+@import '../../../styles/_variables';
+.section-intro{
+    &__background-image{
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        transition: opacity 1s,background-position 2s cubic-bezier(.25,.46,.195,1);        
+        &.hide{
+            opacity: 0;
+        }
+    }
+}

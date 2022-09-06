@@ -2,10 +2,10 @@ import React from 'react';
 import './Icon.scss';
 import Icons from '../../../assets/icons/icons.svg';
 
-function Icon({name, size, color, animation}) {
+function Icon({name, size, color, animation, classes}) {
   return (
     // <img class={`icon icon--${size}`} src={require(`../../../assets/icons/${name}.${type}`)} alt={name} />
-    <svg className={`icon icon-${name} ${animation}`} fill={color} width={size} height={size}>
+    <svg className={`icon icon-${name} ${animation} ${classes}`} fill={color} width={size} height={size}>
       <use xlinkHref={`${Icons}#icon-${name}`} />
     </svg>
   )

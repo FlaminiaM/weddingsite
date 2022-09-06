@@ -2,14 +2,35 @@ import React from 'react';
 import './TwoColumns.scss';
 
 import Overlay from '../../atoms/overlay/Overlay';
-import PageTitle from '../../atoms/pageTitle/PageTitle';
+import Loader from '../../atoms/loader/Loader';
+import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
 
-function TwoColumns({sectionLeftContent, sectionRightContent}) {
+function TwoColumns({pages}) {
   
-  const currentPageRef = React.useRef("home");
+  const currentPageRef = React.useRef("homepage");
   const arrayRefs = React.useRef([]);
+  const [imgsLoaded, setImgsLoaded] = React.useState(false);
+
+  const imagesToPreload = [];
+  pages.map((page) => imagesToPreload.push(page.sectionIntro.imageUrl));
   
   React.useEffect(() => {
+    const loadImage = imageUrl => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image()
+        loadImg.src = imageUrl
+        loadImg.onload = () =>
+          setTimeout(() => {
+            resolve(imageUrl)
+          }, 2000)
+
+        loadImg.onerror = err => reject(err)
+      })
+    }
+
+    Promise.all(imagesToPreload.map(imageUrl => loadImage(imageUrl)))
+      .then(() => setImgsLoaded(true))
+      .catch(err => console.log("Failed to load images", err))
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
   }, []);
@@ -38,40 +59,39 @@ function TwoColumns({sectionLeftContent, sectionRightContent}) {
         if(page !== currentPageRef.current){
           currentPageRef.current = page;
           if(document.getElementById(page).classList.contains("hide")){
-            document.querySelectorAll(".two-columns-layout-left__background-image").forEach((el) => el.classList.add("hide"));
+            document.querySelectorAll(".section-intro__background-image").forEach((el) => el.classList.add("hide"));
             document.getElementById(page).classList.remove("hide");
-            document.querySelector(".two-columns-layout-left").classList.add("fade-in-down");
+            document.querySelector(".section-intro__background-image").classList.add("fade-in-down");
           }
         }
       }
     })
   }
 
-  const displaySectionsRight = sectionRightContent.map((el) => (
-    <React.Fragment key={el.id}>
-      <div className='two-columns-layout-right-section' page={el.page} ref={addToRefs}><el.component /></div>
+  const displaySectionsRight = pages.map((page) => (
+    <React.Fragment key={page.id}>
+      <div className='two-columns-layout-right-section' page={page.pageName} ref={addToRefs}><page.sectionContent.component /></div>
     </React.Fragment>
   ))
 
-  const displaySectionsLeft = sectionLeftContent.map((el, i) => (
-    <React.Fragment key={el.id}>
-      <div className={`two-columns-layout-left__background-image  ${i === 0 ? "" : "hide"}`} id={el.page} style={{backgroundImage: `url(${el.imageUrl})`}}>
-        <PageTitle title={el.title} subtitle={el.subtitle} textColor={el.pageTitleTextColor} gif={el.gif}/>
-      </div>
-    </React.Fragment>
-  ))
-
+  const displaySectionsLeft = pages.map((page, i) => <SectionIntro page={page} i={i} key={page.id} />)
 
   return (
-    <div className='two-columns-layout'>
-        <div className='two-columns-layout-left'>
-            {displaySectionsLeft}
-            <Overlay />
-        </div>
-        <div className='two-columns-layout-right'>
-            {displaySectionsRight}
-        </div>
-    </div>
+    <main>
+        {imgsLoaded ? (
+          <div className='two-columns-layout'>
+              <div className='two-columns-layout-left'>
+                  {displaySectionsLeft}
+                  <Overlay />
+              </div>
+              <div className='two-columns-layout-right'>
+                  {displaySectionsRight}
+              </div>
+          </div>
+        ) : (
+          <Loader />
+        )}
+      </main>
   )
 }
 

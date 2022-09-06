@@ -1,0 +1,11 @@
+@import '../../../styles/_variables';
+
+.page-container{
+    height: 100vh;
+    padding-left: $m-md;
+    padding-right: $m-md;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

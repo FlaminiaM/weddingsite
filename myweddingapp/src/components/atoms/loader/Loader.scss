@@ -1,0 +1,32 @@
+@import '../../../styles/_variables';
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-loader;
+
+    &--flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-welcome-message{
+        position: relative;
+        &__gif{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-19%, -64%) scale(.7);
+        }
+    }
+
+    & h1{
+        color: $white;
+        font-size: toRem(100);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-107%, -50%);
+    }
+}

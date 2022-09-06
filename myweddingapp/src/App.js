@@ -1,29 +1,21 @@
 import './App.scss';
+import React from 'react';
 import TwoColumns from './components/layout/twoColumns/TwoColumns';
-// import Icon from './components/atoms/icon/Icon';
-// import Image from './components/atoms/image/Image';
+import {pages} from './data/pagesData';
 import {columnLeftData} from './data/columnLeftData';
 import {columnRightData} from './data/columnRightData';
-// import Line from './components/atoms/line/Line';
-// import MenuContainer from './components/organisms/menuContainer/MenuContainer';
+import SingleColumn from './components/layout/singleColumn/SingleColumn';
 
 function App() {
-  console.log(columnLeftData)
+  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 768);
   return (
     <div className="App">
-      <TwoColumns sectionLeftContent={columnLeftData} sectionRightContent={columnRightData}/>
-      {/* <TwoColumns sectionLeftContent={<Image name="church" type="png" size="large"/>} sectionRightContent={<h1>Hello World</h1>}/> */}
-      {/* <Button type="button" text="RSVP" />
-      <h1>Hello World</h1>
-      <Line type="divider" orientation="horizontal" />
-      <Line type="timeline" orientation="horizontal" />
-      <Line type="timeline" orientation="vertical" />
-      <Image name="church" size="small"/>
-      <Image name="church" size="medium"/>
-      <Image name="church" size="large"/>
-      <Icon name="arrow-down" size={66} animation="bounce"/> 
-
-      <MenuContainer /> */}
+      {/* <div className='App-test'></div> */}
+      {
+        isDesktop 
+          ? <TwoColumns pages={pages}/>
+          : <SingleColumn pages = {pages}/>
+      }
     </div>
   );
 }
