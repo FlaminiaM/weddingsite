@@ -1,4 +1,7 @@
 .img{
+    &--xsmall{
+        transform: scale(.4);
+    }
     &--small{
         transform: scale(.5);
     }

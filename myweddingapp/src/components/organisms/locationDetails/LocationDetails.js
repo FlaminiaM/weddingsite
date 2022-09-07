@@ -1,0 +1,19 @@
+import React from 'react';
+import './LocationDetails.scss';
+
+import TitleWithIcon from '../../atoms/titleWithIcon/TitleWithIcon';
+import Line from '../../atoms/line/Line';
+
+function LocationDetails({sectionTitle, titleIcon, venuName, venueAddress, linkText}) {
+  return (
+    <div className='location-details'>
+      <TitleWithIcon sectionTitle={sectionTitle} icon={titleIcon}/>
+      <Line type="divider" orientation="horizontal" />
+      <h3 className='mt-xl mb-xl new-line'>{venuName.split("<br/>").join("\n")}</h3>
+      <h4 className='mb-xl new-line'>{venueAddress.split("<br/>").join("\n")}</h4>
+      <a href="#" >{linkText}</a>
+    </div>
+  )
+}
+
+export default LocationDetails;

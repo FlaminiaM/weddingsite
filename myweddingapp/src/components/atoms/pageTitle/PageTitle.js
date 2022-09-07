@@ -8,7 +8,7 @@ function PageTitle({title, subtitle, textColor, gif}) {
             <h1>{title}</h1>
             {gif ? (<img src={gif} alt="gif" />) : null}
         </div>
-        {subtitle ? (<h3>{subtitle}</h3>) : null }
+        {subtitle ? (<h3 className='new-line'>{subtitle.split("<br/>").join("\n")}</h3>) : null }
     </div>
   )
 }

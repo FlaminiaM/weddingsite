@@ -1,0 +1,7 @@
+@import '../../../styles/_variables';
+
+.homepage{
+    & .img{
+        height: toRem(150);
+    }
+}
