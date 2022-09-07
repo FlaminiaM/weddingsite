@@ -1,0 +1,24 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+.gifts{
+    position: relative;
+    height: 95vh;
+    padding-top: $m-xxl;
+    &__bottom-image{
+        width: toRem(200);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mdMinBreakPoint {
+            width: toRem(288);
+        }
+        
+        & img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

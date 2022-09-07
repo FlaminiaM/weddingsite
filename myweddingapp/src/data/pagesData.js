@@ -1,6 +1,7 @@
 import Home from "../components/pages/home/Home";
 import Locations from '../components/pages/locations/Locations';
 import Timeline from '../components/pages/timeline/Timeline';
+import Gifts from "../components/pages/gifts/Gifts";
 
 import Airplane from '../assets/gifs/airplane.gif';
 
@@ -49,6 +50,21 @@ export const pages = [
         sectionContent: {
             showDesktopOnly: false,
             component: Timeline,
+        }
+    },
+    {
+        id: 4,
+        pageName: "gifts",
+        sectionIntro: {
+            showDesktopOnly: true,
+            title: "To our next adventure...",
+            subtitle: "",
+            pageTitleTextColor: 'black',
+            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/yMN0qv5TwGBTxpU5TL0f_1%201.jpg/st%3D2022-09-07T14%253A51%253A27Z%26se%3D2023-09-07T14%253A56%253A27Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DmYP4mYuUjX%252FWREcAdmlYTDwCiS7xJpiKxfEr3pg%252F0Pc%253D"
+        }, 
+        sectionContent: {
+            showDesktopOnly: false,
+            component: Gifts,
         }
     },
 ]
