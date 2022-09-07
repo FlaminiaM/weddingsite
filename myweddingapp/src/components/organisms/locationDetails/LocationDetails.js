@@ -6,7 +6,7 @@ import Line from '../../atoms/line/Line';
 
 function LocationDetails({sectionTitle, titleIcon, venuName, venueAddress, linkText}) {
   return (
-    <div className='location-details'>
+    <div className='location-details mb-xxl'>
       <TitleWithIcon sectionTitle={sectionTitle} icon={titleIcon}/>
       <Line type="divider" orientation="horizontal" />
       <h3 className='mt-xl mb-xl new-line'>{venuName.split("<br/>").join("\n")}</h3>

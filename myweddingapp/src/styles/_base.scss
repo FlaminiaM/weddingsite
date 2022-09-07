@@ -42,46 +42,65 @@ table {
 	border-spacing: 0;
 }
 
-
 .mb-xs{
-	margin-bottom:$m-xs;
+	margin-bottom:$m-xxs;
 }
 .mb-s{
-	margin-bottom:$m-s;
+	margin-bottom:$m-xxs;
 }
 .mb-md{
-	margin-bottom:$m-md;
+	margin-bottom:$m-xs;
 }
 .mb-lg{
-	margin-bottom:$m-lg;
+	margin-bottom:$m-s;
 }
 .mb-xl{
-	margin-bottom:$m-xl;
+	margin-bottom:$m-md;
 }
 
 .mb-xxl{
-	margin-bottom:$m-xxl;
+	margin-bottom:$m-lg;
 }
 
-.mb-xs{
-	margin-bottom:$m-xs;
+.mt-xs{
+	margin-top:$m-xxs;
 }
-
 .mt-s{
-	margin-top:$m-s;
+	margin-top:$m-xxs;
 }
 .mt-md{
-	margin-top:$m-md;
+	margin-top:$m-xs;
 }
 .mt-lg{
-	margin-top:$m-lg;
+	margin-top:$m-s;
 }
 .mt-xl{
-	margin-top:$m-xl;
+	margin-top:$m-md;
 }
 .mt-xxl{
-	margin-top:$m-xxl;
+	margin-top:$m-lg;
 }
+
+.mr-xs{
+	margin-right:$m-xxs;
+}
+.mr-s{
+	margin-right:$m-xxs;
+}
+.mr-md{
+	margin-right:$m-xs;
+}
+.mr-lg{
+	margin-right:$m-s;
+}
+.mr-xl{
+	margin-right:$m-md;
+}
+.mr-xxl{
+	margin-right:$m-lg;
+}
+
+
 
 .txt-center{
 	text-align: center;
@@ -89,4 +108,65 @@ table {
 
 .new-line {
     white-space: pre-line;
+}
+
+
+@include mdMinBreakPoint {
+	.mb-xs{
+		margin-bottom:$m-xs;
+	}
+	.mb-s{
+		margin-bottom:$m-s;
+	}
+	.mb-md{
+		margin-bottom:$m-md;
+	}
+	.mb-lg{
+		margin-bottom:$m-lg;
+	}
+	.mb-xl{
+		margin-bottom:$m-xl;
+	}
+
+	.mb-xxl{
+		margin-bottom:$m-xxl;
+	}
+
+	.mt-xs{
+		margin-top:$m-xs;
+	}
+	.mt-s{
+		margin-top:$m-s;
+	}
+	.mt-md{
+		margin-top:$m-md;
+	}
+	.mt-lg{
+		margin-top:$m-lg;
+	}
+	.mt-xl{
+		margin-top:$m-xl;
+	}
+	.mt-xxl{
+		margin-top:$m-xxl;
+	}
+
+	.mr-xs{
+		margin-right:$m-xs;
+	}
+	.mr-s{
+		margin-right:$m-s;
+	}
+	.mr-md{
+		margin-right:$m-md;
+	}
+	.mr-lg{
+		margin-right:$m-lg;
+	}
+	.mr-xl{
+		margin-right:$m-xl;
+	}
+	.mr-xxl{
+		margin-right:$m-xxl;
+	}
 }

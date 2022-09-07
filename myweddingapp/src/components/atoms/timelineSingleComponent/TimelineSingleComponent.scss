@@ -1,0 +1,61 @@
+@import '../../../styles/_variables';
+@import '../../../styles/mixins';
+
+.timeline-single-component{
+    display: flex;
+    align-items: center;
+    
+    &-body-right{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &--left{
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        transform: translate(-95%, -50%);
+    }
+
+    &--right{
+        flex-direction: row-reverse;
+        position: absolute;
+        left: 50%;
+        transform: translate(-5%, -50%);
+    }
+
+    &--1{
+        top: 15%;
+    }
+    &--2{
+        top: 30%;
+    }
+    &--3{
+        top: 45%;
+    }
+    &--4{
+        top: 60%;
+    }
+    &--5{
+        top: 75%;
+    }
+
+    @include mdMinBreakPoint {
+        &--1{
+            top: 20%;
+        }
+        &--2{
+            top: 35%;
+        }
+        &--3{
+            top: 50%;
+        }
+        &--4{
+            top: 65%;
+        }
+        &--5{
+            top: 80%;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @import '../../../styles/_variables';
+@import '../../../styles/mixins';
 
 .line{
     &--divider{
@@ -11,12 +12,18 @@
     &--timeline{
         background-color: $black;
         &-horizontal{
-            width: toRem(174);
+            width: toRem(104);
             height: toRem(3);
+            @include mdMinBreakPoint {
+                width: toRem(174);
+            }
         }
         &-vertical{
             width: toRem(3);
-            height: toRem(325);
+            height: toRem(350);
+            @include mdMinBreakPoint {
+                height: toRem(550);
+            }
         }
     }
 }

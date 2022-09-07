@@ -1,14 +1,39 @@
-.img{
+
+@import '../../../styles/_variables';
+@import '../../../styles/mixins';
+
+.image-container{
     &--xsmall{
-        transform: scale(.4);
+        width: toRem(30);
     }
     &--small{
-        transform: scale(.5);
+        width: toRem(50);
     }
     &--medium{
-        transform: scale(.8);
+        width: toRem(60);
     }
     &--large{
-        transform: scale(1);
+        width: toRem(90);
+    }
+
+    & img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    @include mdMinBreakPoint {
+        &--xsmall{
+            width: toRem(50);
+        }
+        &--small{
+            width: toRem(60);
+        }
+        &--medium{
+            width: toRem(90);
+        }
+        &--large{
+            width: toRem(100);
+        }
     }
 }
