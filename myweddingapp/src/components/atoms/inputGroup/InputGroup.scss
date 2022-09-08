@@ -1,0 +1,21 @@
+@import '../../../styles/_variables';
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    &--full-width{
+        width: 99%;
+    }
+    &--half-width{
+        width: 48.5%;
+        &:nth-of-type(1){
+            margin-right: $m-s;
+        }
+    }
+
+    & .input-group__input{
+        height: toRem(40);
+    }
+}

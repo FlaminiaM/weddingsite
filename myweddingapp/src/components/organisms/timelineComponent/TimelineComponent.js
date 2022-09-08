@@ -1,7 +1,7 @@
 import React from 'react';
 import './TimelineComponent.scss';
 
-import SingleTimelineComponent from '../../atoms/timelineSingleComponent/TimelineSingleComponent';
+import SingleTimelineComponent from '../../molecules/timelineSingleComponent/TimelineSingleComponent';
 import Image from '../../atoms/image/Image';
 import Line from '../../atoms/line/Line';
 

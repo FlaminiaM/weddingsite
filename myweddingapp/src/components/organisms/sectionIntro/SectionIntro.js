@@ -1,7 +1,7 @@
 import React from 'react';
 import './SectionIntro.scss';
 
-import PageTitle from '../../atoms/pageTitle/PageTitle';
+import PageTitle from '../../molecules/pageTitle/PageTitle';
 
 function SectionIntro({page, i}) {
   return (

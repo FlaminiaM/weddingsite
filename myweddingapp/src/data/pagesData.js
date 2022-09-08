@@ -2,6 +2,7 @@ import Home from "../components/pages/home/Home";
 import Locations from '../components/pages/locations/Locations';
 import Timeline from '../components/pages/timeline/Timeline';
 import Gifts from "../components/pages/gifts/Gifts";
+import Rsvp from "../components/pages/rsvp/Rsvp";
 
 import Airplane from '../assets/gifs/airplane.gif';
 
@@ -67,4 +68,20 @@ export const pages = [
             component: Gifts,
         }
     },
+    {
+        id: 5,
+        pageName: "rsvp",
+        sectionIntro: {
+            showDesktopOnly: true,
+            title: "We'd love to have <br/> you with us!",
+            subtitle: "Saturday 8th July 2023",
+            pageTitleTextColor: 'white',
+            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/6oECGZiWQWaBEiEN1Hqm_20220608_165613.jpg/st%3D2022-09-08T14%253A57%253A04Z%26se%3D2023-09-08T15%253A02%253A04Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3D7TIOCqm1jGwySpBX6TkeKRxZgLG1xVfPLUCiQ3SnBaM%253D"
+        }, 
+        sectionContent: {
+            showDesktopOnly: false,
+            component: Rsvp,
+        }
+    },
+
 ]

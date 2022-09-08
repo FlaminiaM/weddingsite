@@ -1,7 +1,7 @@
 import React from 'react';
 import './LocationDetails.scss';
 
-import TitleWithIcon from '../../atoms/titleWithIcon/TitleWithIcon';
+import TitleWithIcon from '../../molecules/titleWithIcon/TitleWithIcon';
 import Line from '../../atoms/line/Line';
 
 function LocationDetails({sectionTitle, titleIcon, venuName, venueAddress, linkText}) {
