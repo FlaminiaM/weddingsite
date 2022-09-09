@@ -3,6 +3,7 @@ import Locations from '../components/pages/locations/Locations';
 import Timeline from '../components/pages/timeline/Timeline';
 import Gifts from "../components/pages/gifts/Gifts";
 import Rsvp from "../components/pages/rsvp/Rsvp";
+import Urbino from "../components/pages/urbino/Urbino";
 
 import Airplane from '../assets/gifs/airplane.gif';
 
@@ -81,6 +82,21 @@ export const pages = [
         sectionContent: {
             showDesktopOnly: false,
             component: Rsvp,
+        }
+    },
+    {
+        id: 6,
+        pageName: "urbino",
+        sectionIntro: {
+            showDesktopOnly: true,
+            title: "Urbino",
+            subtitle: "Saturday 8th July 2023",
+            pageTitleTextColor: 'white',
+            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/1nyzJ7JQemhuGpkhGWf4_marian-luzi-NI0bY-VvMi8-unsplash.jpg/st%3D2022-09-09T10%253A57%253A01Z%26se%3D2023-09-09T11%253A02%253A01Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DY28R%252BplQdT2qhuPa5W2XhJZmmPQMdPSEHWx143zPPzs%253D"
+        }, 
+        sectionContent: {
+            showDesktopOnly: false,
+            component: Urbino,
         }
     },
 

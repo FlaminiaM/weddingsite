@@ -4,19 +4,75 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    position: relative;
 
     &--full-width{
         width: 99%;
     }
     &--half-width{
         width: 48.5%;
-        &:nth-of-type(1){
+        &:nth-child(3n+1){
             margin-right: $m-s;
         }
     }
 
-    & .input-group__input{
+    &-label{
+        &--mandatory{
+            color: $dark-red;
+        }
+    }
+
+    &__input{
         height: toRem(40);
-        
+        border: 1px solid $darker-gray;
+    }
+
+    &-error-message{
+        display: none;
+        position: absolute;
+        bottom: toRem(-20);
+    }
+
+    &--error{
+        & .input-group-label{
+            color: $dark-red;
+        }
+
+        & .input-group__input{
+            border: 1px solid $dark-red;
+        }
+
+        & .input-group-error-message{
+            display: flex;
+            color: $dark-red;
+            align-items: center;
+
+            &__text{
+                margin-left: $m-s;
+            }
+        }
+    }
+
+    &-radio-inputs-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-radio{
+        display: flex;
+        border: 1px solid $darker-gray;
+        background-color: $white;
+        align-items: center;
+        width: 48%;
+        &:nth-of-type(odd){
+            margin-right: $m-s;
+        }
+    }
+
+    &__input[type="radio" i]{
+        border: 0px;
+        width: toRem(15);
+        margin: 0 toRem(8) 0 toRem(8);
+        accent-color: $black;
     }
 }

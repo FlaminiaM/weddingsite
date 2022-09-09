@@ -1,0 +1,10 @@
+@import '../../../styles/_variables';
+
+.guests-info{
+    display: flex;
+    align-items: center;
+    & h4{
+        text-decoration: underline;
+        margin-left: toRem(10);
+    }
+}
