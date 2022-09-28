@@ -6,6 +6,7 @@ import LocationDetails from '../../organisms/locationDetails/LocationDetails';
 import Image from '../../atoms/image/Image';
 import Icon from '../../atoms/icon/Icon';
 
+
 function Locations() {
   return (
     <PageContainer pageName="locations">

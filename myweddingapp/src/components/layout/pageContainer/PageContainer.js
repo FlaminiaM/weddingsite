@@ -2,9 +2,9 @@ import React from 'react';
 import './PageContainer.scss';
 
 
-function PageContainer({pageName, children}) {
+function PageContainer({pageName, children, hasDrawer}) {
   return (
-    <div className='page-container' id={`page-${pageName}`}>
+    <div className={`page-container ${hasDrawer ? "page-container--with-drawer" : ""}`} id={`page-${pageName}`}>
         {children}
     </div>
   )

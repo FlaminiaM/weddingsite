@@ -4,6 +4,7 @@ import './TwoColumns.scss';
 import Overlay from '../../atoms/overlay/Overlay';
 import Loader from '../../atoms/loader/Loader';
 import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
+import SideDrawer from '../../organisms/sideDrawer/SideDrawer';
 
 function TwoColumns({pages}) {
   
@@ -76,9 +77,15 @@ function TwoColumns({pages}) {
 
   const displaySectionsLeft = pages.map((page, i) => <SectionIntro page={page} i={i} key={page.id} />)
 
+
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+  const handleDrawerState = () => {
+      setOpenDrawer(!openDrawer);
+  }
+
   return (
     <main>
-        {imgsLoaded ? (
+        {true ? (
           <div className='two-columns-layout'>
               <div className='two-columns-layout-left'>
                   {displaySectionsLeft}
@@ -87,10 +94,12 @@ function TwoColumns({pages}) {
               <div className='two-columns-layout-right'>
                   {displaySectionsRight}
               </div>
+              <SideDrawer handleDrawerState={handleDrawerState} isOpen={openDrawer} />
           </div>
         ) : (
           <Loader />
         )}
+
       </main>
   )
 }
