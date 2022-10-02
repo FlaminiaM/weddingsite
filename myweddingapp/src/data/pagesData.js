@@ -28,7 +28,7 @@ export const pages = [
         id: 2,
         pageName: "locations",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "Save the date",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
@@ -43,7 +43,7 @@ export const pages = [
         id: 3,
         pageName: "timeline",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "The wedding",
             subtitle: "",
             pageTitleTextColor: 'white',
