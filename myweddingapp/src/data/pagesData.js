@@ -28,7 +28,7 @@ export const pages = [
         id: 2,
         pageName: "locations",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "Save the date",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
@@ -43,7 +43,7 @@ export const pages = [
         id: 3,
         pageName: "timeline",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "The wedding",
             subtitle: "",
             pageTitleTextColor: 'white',
@@ -58,7 +58,7 @@ export const pages = [
         id: 4,
         pageName: "gifts",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "To our next adventure...",
             subtitle: "",
             pageTitleTextColor: 'black',
@@ -73,7 +73,7 @@ export const pages = [
         id: 5,
         pageName: "rsvp",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "We'd love to have <br/> you with us!",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
@@ -88,7 +88,7 @@ export const pages = [
         id: 6,
         pageName: "urbino",
         sectionIntro: {
-            showDesktopOnly: true,
+            showDesktopOnly: false,
             title: "Urbino",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
