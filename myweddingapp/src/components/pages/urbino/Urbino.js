@@ -4,13 +4,10 @@ import './Urbino.scss';
 import PageContainer from '../../layout/pageContainer/PageContainer';
 import Line from '../../atoms/line/Line';
 import Image from '../../atoms/image/Image';
-import SideDrawer from '../../organisms/sideDrawer/SideDrawer';
+import {handleDrawerState} from '../../../redux/actions/drawerActions';
+import { connect } from 'react-redux';
 
-function Urbino() {
-    // const [openDrawer, setOpenDrawer] = React.useState(false);
-    // const handleDrawerState = () => {
-    //     setOpenDrawer(!openDrawer);
-    // }
+function Urbino(props) {
   return (
     <PageContainer pageName="Urbino">
         <div className='urbino'>
@@ -35,12 +32,11 @@ function Urbino() {
                     size = "large" 
                     type ="png"
                 />
-                <h4>Guests information</h4>
+                <h4 onClick={()=> props.handleDrawerState()}>Guests information</h4>
             </div>
         </div>
-        {/* <SideDrawer handleDrawerState={handleDrawerState} isOpen={openDrawer}/> */}
     </PageContainer>
   )
 }
 
-export default Urbino
+export default connect(null, { handleDrawerState })(Urbino);

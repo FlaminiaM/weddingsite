@@ -77,12 +77,6 @@ function TwoColumns({pages}) {
 
   const displaySectionsLeft = pages.map((page, i) => <SectionIntro page={page} i={i} key={page.id} />)
 
-
-  const [openDrawer, setOpenDrawer] = React.useState(false);
-  const handleDrawerState = () => {
-      setOpenDrawer(!openDrawer);
-  }
-
   return (
     <main>
         { imgsLoaded ? (
@@ -94,7 +88,7 @@ function TwoColumns({pages}) {
               <div className='two-columns-layout-right'>
                   {displaySectionsRight}
               </div>
-              <SideDrawer handleDrawerState={handleDrawerState} isOpen={openDrawer} />
+              <SideDrawer/>
           </div>
         ) : (
           <Loader />
