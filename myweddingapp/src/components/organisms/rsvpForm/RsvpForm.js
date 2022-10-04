@@ -5,6 +5,8 @@ import InputGroup from '../../atoms/inputGroup/InputGroup';
 import Button from '../../atoms/button/Button';
 
 function RsvpForm() {
+  const inputHandler = (e) => console.log(e.target.value)
+  const selectInputHandler = (e) => console.log(e)
   return (
     <form className='rsvp-form'>
         <InputGroup 
@@ -14,6 +16,7 @@ function RsvpForm() {
           inputName = "firstname"
           isFullWidth={false}
           hasError= {false}
+          inputHandler = {inputHandler}
         />
         <InputGroup 
           labelText = "Last Name"
@@ -21,6 +24,7 @@ function RsvpForm() {
           inputType = "text"
           inputName = "lastname"
           isFullWidth={false}
+          inputHandler = {inputHandler}
         />
         <InputGroup 
           labelText = "Email Address"
@@ -28,44 +32,8 @@ function RsvpForm() {
           inputType = "email"
           inputName = "email"
           isFullWidth={true}
+          inputHandler = {inputHandler}
         />
-        {/* <InputGroup 
-          labelText = "Number of Guests"
-          isMandatory = {true}
-          inputType = "select"
-          inputName = "guests"
-          isFullWidth={false}
-          isMulti={false}
-          options= {[
-            {
-              label: "One",
-              value: "one"
-            },
-            {
-              label: "Two",
-              value: "two"
-            },
-            {
-              label: "Three",
-              value: "three"
-            },
-            {
-              label: "Four",
-              value: "four"
-            },
-            {
-              label: "Five",
-              value: "five"
-            }
-          ]}
-        />
-        <InputGroup 
-          labelText = "Full name of extra guests"
-          isMandatory = {true}
-          inputType = "textarea"
-          inputName = "extraguests"
-          isFullWidth={false}
-        /> */}
         <InputGroup 
           labelText = "Dietary requirements"
           isMandatory = {true}
@@ -73,6 +41,7 @@ function RsvpForm() {
           inputName = "diet"
           isFullWidth={true}
           isMulti={true}
+          inputHandler = {selectInputHandler}
           options= {[
             {
               label: "Gluten free",
@@ -95,24 +64,26 @@ function RsvpForm() {
         <InputGroup 
           labelText = "Attendance"
           isMandatory = {true}
-          inputType = "radio-group"
-          inputName = "yes"
+          inputType = "select"
+          inputName = "attendance"
           isFullWidth={true}
+          isMulti={false}
+          inputHandler = {selectInputHandler}
           options= {[
             {
-              name: "I'll be there",
+              label: "I'll be there",
               value: "both"
             },
             {
-              name: "I can't attend",
+              label: "I can't attend",
               value: "no"
             },
             {
-              name: "Church only",
+              label: "Church only",
               value: "church"
             },
             {
-              name: "Reception only",
+              label: "Reception only",
               value: "reception"
             }
           ]}
@@ -123,6 +94,7 @@ function RsvpForm() {
           inputType = "textarea"
           inputName = "extra"
           isFullWidth={true}
+          inputHandler = {inputHandler}
         />
         <Button classes="mt-xl" type="submit" text="CONFIRM"/>
     </form>
