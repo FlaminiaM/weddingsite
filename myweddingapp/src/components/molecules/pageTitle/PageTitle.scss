@@ -1,11 +1,16 @@
 @import '../../../styles/_variables';
+@import '../../../styles/_mixins';
 
 .page-title-container{
     position: absolute;
     bottom: 0;
-    padding: 10% 20% 10% 8%;
+    padding: 10% 20% 5% 8%;
     z-index: 1;
-    max-width: 60%;
+    max-width: 65%;
+    @include mdMinBreakPoint {
+        padding: 10% 20% 10% 8%;
+        max-width: 60%;
+    }
 
     &--white{
         color: $white;

@@ -9,7 +9,8 @@
         left: 0;
         right: 0;
         background-repeat: no-repeat;
-        transition: opacity 1s,background-position 2s cubic-bezier(.25,.46,.195,1);        
+        transition: opacity 1s,background-position 2s cubic-bezier(.25,.46,.195,1);     
+           
         &.hide{
             opacity: 0;
         }
