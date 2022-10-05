@@ -9,6 +9,7 @@ import SingleColumn from './components/layout/singleColumn/SingleColumn';
 import { Provider } from 'react-redux';
 
 import store from './store';
+import SideDrawer from './components/organisms/sideDrawer/SideDrawer';
 
 function App() {
   const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 768);
@@ -35,6 +36,7 @@ function App() {
             ? <TwoColumns pages={pages}/>
             : <SingleColumn pages = {pages}/>
         }
+        <SideDrawer />
       </div>
     </Provider>
   );

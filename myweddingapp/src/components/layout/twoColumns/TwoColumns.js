@@ -4,7 +4,6 @@ import './TwoColumns.scss';
 import Overlay from '../../atoms/overlay/Overlay';
 import Loader from '../../atoms/loader/Loader';
 import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
-import SideDrawer from '../../organisms/sideDrawer/SideDrawer';
 
 function TwoColumns({pages}) {
   
@@ -88,7 +87,7 @@ function TwoColumns({pages}) {
               <div className='two-columns-layout-right'>
                   {displaySectionsRight}
               </div>
-              <SideDrawer/>
+              {/* <SideDrawer/> */}
           </div>
         ) : (
           <Loader />
