@@ -2,10 +2,16 @@
 @import '../../../styles/_mixins';
 .gifts{
     position: relative;
-    height: 95vh;
-    padding-top: $m-xxl;
+    height: 70vh;
+    padding-top: $m-md;
+    margin-bottom: $m-md;
+    @include mdMinBreakPoint {
+        height: 95vh;
+        padding-top: $m-xxl;
+    }
+
     &__bottom-image{
-        width: toRem(200);
+        width: toRem(120);
         position: absolute;
         bottom: 0;
         left: 50%;

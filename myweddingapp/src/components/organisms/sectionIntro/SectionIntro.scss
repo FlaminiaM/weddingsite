@@ -14,5 +14,11 @@
         &.hide{
             opacity: 0;
         }
+
+        &--full-h{
+            & .overlay{
+                height: 100vh;
+            }
+        }
     }
 }

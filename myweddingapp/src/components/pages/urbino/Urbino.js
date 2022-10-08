@@ -11,7 +11,7 @@ function Urbino(props) {
   return (
     <PageContainer pageName="Urbino">
         <div className='urbino'>
-            <h1 className='mb-xl'>See you there!</h1>
+            <h1 className='mb-xl txt-center'>See you there!</h1>
             <div className='txt-center'>
                 <p className='mb-xl mt-xl'>Urbino has a special place in our hearts and we cannot wait to celebrate our special day in this wonderful city with you!</p>
                 <p className='mb-xl'>Should you need anything don’t hesitate to get in touch with us via email or via WhatsApp!</p>

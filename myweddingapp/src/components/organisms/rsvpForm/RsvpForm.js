@@ -129,8 +129,8 @@ function RsvpForm() {
     <form className='rsvp-form'>
       {formFields.map((formField, i) => (
         <InputGroup 
-          hasError= {formErrors[formField.inputName].hasError}
-          errorMessage = {formErrors[formField.inputName].errorMessage}
+          //hasError= {formErrors[formField.inputName].hasError}
+          //errorMessage = {formErrors[formField.inputName].errorMessage}
           inputHandler = {inputHandler}
           focusHandler = {focusHandler}
           {...formField}
