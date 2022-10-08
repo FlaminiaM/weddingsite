@@ -1,3 +1,6 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
 .rsvp-form{
     width: 100%;
     display: flex;
@@ -5,4 +8,10 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: $m-xxl;
+    margin-top: $m-md;
+    
+    @include mdMinBreakPoint {
+        margin-bottom: 0;
+    }
 }

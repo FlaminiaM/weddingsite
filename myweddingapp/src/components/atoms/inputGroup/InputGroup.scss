@@ -25,6 +25,7 @@
     &__input{
         height: toRem(40);
         border: 1px solid $darker-gray;
+        padding-left: $m-s;
     }
 
     &-error-message{

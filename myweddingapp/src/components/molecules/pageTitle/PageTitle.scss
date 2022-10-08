@@ -20,8 +20,11 @@
     }
 
     &__title{
-        margin-bottom: $m-md;
+        margin-bottom: $m-xs;
         position: relative;
+        @include mdMinBreakPoint {
+            margin-bottom: $m-md;
+        }
         &--with-gif{
             & img{
                 width: toRem(200);

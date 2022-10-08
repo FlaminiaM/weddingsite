@@ -2,7 +2,7 @@
     & .section-intro{
         &__background-image{
             position: relative;
-            height: 30vh;
+            height: 230px;//35vh;
             margin-bottom: 1rem;
             //margin-top: 1rem;
             &--full-h{
@@ -13,9 +13,5 @@
                 }
             }
         }
-    }
-
-    & .page-container {
-        min-height: 70vh;
     }
 }

@@ -10,7 +10,7 @@ function Timeline() {
     <PageContainer pageName="timeline">
         <h1>Wedding Timeline</h1>
         <TimelineComponent />
-        <Icon classes="mt-xxl" name="arrow-down" size={66} animation="bounce"/> 
+        {window.innerWidth > 768 ? <Icon classes="mt-xxl" name="arrow-down" size={66} animation="bounce"/>  : null}
     </PageContainer>
   )
 }
