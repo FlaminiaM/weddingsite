@@ -10,7 +10,7 @@ function Home() {
   return (
     <PageContainer pageName="homepage">
       <div className='homepage txt-center'>
-        <Image classes="mb-xl" name="airballoon" type="png" size="medium"/>
+        <Image classes="mb-xl" name="us" type="png" size="large"/>
         <h3 className='mb-xl mt-xl'>Saturday, 8th July 2023</h3>
         <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
         <Button classes='mb-xl mt-xl' type="button" text="RSVP" />

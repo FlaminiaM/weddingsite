@@ -1,7 +1,7 @@
 import { DRAWER_STATE } from '../actions/types';
 
 const initialState = {
-  isDrawerOpen: false,
+  isDrawerOpen: null,
 };
 
 const drawerReducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const drawerReducer = (state = initialState, action) => {
     case DRAWER_STATE:
       return {
         ...state,
-        isDrawerOpen: !state.isDrawerOpen
+        isDrawerOpen: state.isDrawerOpen === null ? true : !state.isDrawerOpen
       };
     default:
       return state;
