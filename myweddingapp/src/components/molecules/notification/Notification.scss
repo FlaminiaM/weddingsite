@@ -1,0 +1,19 @@
+@import '../../../styles/_variables';
+.notification{
+    width: 100%;
+    display: flex;
+    padding: toRem(10);
+    border: 1px solid;
+    border-radius: toRem(4);
+    align-items: center;
+    &--success{
+        border-color: $success-dark;
+        background-color: $success-light;
+        color: $success-dark;
+    }
+
+    &-message{
+        margin-left: toRem(16);
+        font-weight: bold;
+    }
+}

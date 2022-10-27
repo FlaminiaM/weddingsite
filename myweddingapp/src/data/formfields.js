@@ -1,3 +1,41 @@
+export const attendanceOptions =[
+    {
+        label: "I'll be there",
+        value: "yes"
+    },
+    {
+        label: "I can't attend",
+        value: "no"
+    },
+    {
+        label: "Church only",
+        value: "churchonly"
+    },
+    {
+        label: "Reception only",
+        value: "receptiononly"
+    }
+]
+
+export const dietaryRequirementsOptions = [
+    {
+        label: "Gluten free",
+        value: "glutenfree"
+    },
+    {
+        label: "Vegetarian",
+        value: "vegeterian"
+    },
+    {
+        label: "Vegan",
+        value: "vegan"
+    },
+    {
+        label: "Nut allergy",
+        value: "nutallergy"
+    }
+]
+
 export const formFields = [
     {
         labelText : "First Name",
@@ -14,37 +52,13 @@ export const formFields = [
         isFullWidth:false,
     },
     {
-        labelText : "Email Address",
-        isMandatory : true,
-        inputType : "email",
-        inputName : "email",
-        isFullWidth:true,
-    },
-    {
         labelText : "Attendance",
         isMandatory : true,
         inputType : "select",
         inputName : "attendance",
         isFullWidth:true,
         isMulti:false,
-        options: [
-            {
-                label: "I'll be there",
-                value: "yes"
-            },
-            {
-                label: "I can't attend",
-                value: "no"
-            },
-            {
-                label: "Church only",
-                value: "churchonly"
-            },
-            {
-                label: "Reception only",
-                value: "receptiononly"
-            }
-        ],
+        options: attendanceOptions,
     },
     {
         labelText : "Dietary requirements",
@@ -53,24 +67,7 @@ export const formFields = [
         inputName : "dietaryrequirements",
         isFullWidth:true,
         isMulti:true,
-        options: [
-            {
-                label: "Gluten free",
-                value: "glutenfree"
-            },
-            {
-                label: "Vegetarian",
-                value: "vegeterian"
-            },
-            {
-                label: "Vegan",
-                value: "vegan"
-            },
-            {
-                label: "Nut allergy",
-                value: "nutallergy"
-            }
-        ]
+        options: dietaryRequirementsOptions
     },
     {
         labelText : "Anything else you want to let us know?",

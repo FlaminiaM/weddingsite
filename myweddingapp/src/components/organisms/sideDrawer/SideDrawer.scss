@@ -1,12 +1,11 @@
 .side-drawer{
     opacity: 0;
-    transform:translateX(1000px);
     height: 100vh;
     position: fixed;
     top: 0;
     background-color: white;
     width: 80vw;
-    right: 0;
+    right: -2000px;
 
     &-close-icon{
         position: absolute;
