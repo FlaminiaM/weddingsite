@@ -1,0 +1,19 @@
+@import '../../../styles/_variables';
+.rsvp-questionnaire{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    &-attendance-answer{
+        padding: 20px;
+        border: 1px solid $darker-gray;
+        border-radius: 8px;
+        width: 90px;
+        height: 80px;
+        margin: 8px;
+
+        & p{
+            margin-top: 8px;
+        }
+    }
+}

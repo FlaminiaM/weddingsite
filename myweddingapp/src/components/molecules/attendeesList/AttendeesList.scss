@@ -1,0 +1,88 @@
+// @import '../../../styles/_variables';
+@import '../../../styles/_typography';
+
+// .attendees-table{
+//     display: table;
+//     width: 100%;
+//     border-collapse: collapse;
+//     font-family: $secondary-font;
+//     &-row{
+//         display: table-row;
+//         border-collapse: collapse;
+//         &--header{
+//             background-color: $success-dark;
+//             padding: toRem(10);
+//             color: $white;
+//             font-weight: bold;
+//             height: 30px;
+//         }  
+        
+//         &--body{
+//             background-color: $success-light;
+//             border: 1px solid $success-dark;
+//             min-height: 50px;
+            
+//         }
+//     }
+
+//     &-column{
+//         display: table-cell;
+//         vertical-align: middle;
+//         &--data{
+//             border-left: 1px solid;
+//             padding: toRem(10);
+//         }
+//         &--header{
+//             padding: toRem(8);
+//             &:first-child{
+//                 border-top-left-radius: toRem(8);
+//             }
+//             &:last-child{
+//                 border-top-right-radius: toRem(8);
+//             }
+//         }
+//     }
+// }
+
+
+.attendees-table{
+    border-collapse: collapse;
+    margin: toRem(25) 0;
+    font-size: 0.9em;
+    font-family: $secondary-font;
+    min-width: toRem(400);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    & thead tr{
+        background-color: #009879;
+        color: #ffffff;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    & th, & td{
+        padding: toRem(12) toRem(15);
+        line-height: toRem(16);
+    }
+
+    & th{
+        &:first-child{
+            border-top-left-radius: toRem(8);
+        }
+        &:last-child{
+            border-top-right-radius: toRem(8);
+        }
+    }
+
+    & tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    & tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    & tbody tr:last-of-type {
+        border-bottom: toRem(2) solid #009879;
+    }
+}

@@ -7,8 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-top: $m-md;
+    justify-content: center;
+
+    &--align-t{
+        justify-content: flex-start;
+    }
 
     @include mdMinBreakPoint {
         padding-left: $m-xxl;
