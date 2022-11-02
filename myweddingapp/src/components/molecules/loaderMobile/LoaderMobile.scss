@@ -1,0 +1,88 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
+
+.loader-m{
+    width: 100vw;
+    height: 100vh;
+    background-color:$bg-loader;
+
+    &-welcome-message{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    &-message{
+        position: absolute;
+        top: 20%;
+        & p{
+            font-size: toRem(32);
+            color: white;
+        }
+    }
+
+    &-paper-plane{
+        z-index: 3;
+        height: toRem(150);
+    }
+
+    &-clouds{
+        position: absolute;
+        top: toRem(150);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transform: translateZ(0);
+
+        & svg{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        &-cloud {
+            position: absolute;
+            top: 20%;
+            width: toRem(300);
+            right: 0;
+            opacity: 1;
+
+            &--front {
+                z-index: 9;
+            }
+            
+            &--distant {
+                z-index: 1;
+            }
+            
+            &--background {
+                z-index: 1;
+            }
+            
+            &--smaller {
+                margin-right: toRem(495);
+                width: toRem(100);
+                margin-top: toRem(9);
+            }
+            
+            &--small {
+                margin-right: toRem(260);
+                width: toRem(150);
+            }
+            
+            &--big {
+                width: toRem(500);
+                margin-top: toRem(100);
+                margin-right: toRem(-300);
+            }
+            
+            &--massive {
+                width: toRem(600);
+                margin-top: toRem(60);
+                margin-right: 0px;
+            }
+        }
+    }
+}
+

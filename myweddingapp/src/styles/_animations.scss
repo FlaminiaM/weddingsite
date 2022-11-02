@@ -1,11 +1,14 @@
+@import './_mixins';
+
+//
 @-webkit-keyframes arrow-bounce {
     0%, 100%, 20%, 50%, 80% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
     40%, 60% {
-        -webkit-transform: translateY(-23px);
-        transform: translateY(-23px);
+        -webkit-transform: translateY(toRem(-23));
+        transform: translateY(toRem(-23));
     }
 }
 @keyframes arrow-bounce {
@@ -14,16 +17,15 @@
         transform: translateY(0);
     }
     40%, 60% {
-        -webkit-transform: translateY(-23px);
-        transform: translateY(-23px);
+        -webkit-transform: translateY(toRem(-23));
+        transform: translateY(toRem(-23));
     }
 }
-  
-
+/// 
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px)
+        transform: translateY(toRem(20))
     }
 
     100% {
@@ -35,11 +37,11 @@
 .fade-in-up {
     animation-name: fadeInUp
 }
-
+///
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-20px)
+        transform: translateY(toRem(-20))
     }
 
     100% {
@@ -51,14 +53,14 @@
 .fade-in-down {
     animation-name: fadeInDown
 }
-
+///
 @keyframes slide-in-right{
     0%{
-        transform:translateX(2000px);
+        transform:translateX(toRem(2000));
         opacity: 0;
     }
     100%{
-        transform:translateX(-2000px);
+        transform:translateX(toRem(-2000));
         opacity: 1;
     }
 }
@@ -69,11 +71,11 @@
 
 @keyframes slide-out-right{
     0%{
-        transform:translateX(-2000px);
+        transform:translateX(toRem(-2000));
         opacity: 1;
     }
     100%{
-        transform:translateX(2000px);
+        transform:translateX(toRem(2000));
         opacity: 0;
     }
 }
@@ -91,8 +93,8 @@
                 transform-origin: 50% 16%;
     }
     100% {
-        -webkit-transform: scale(1.1) translateY(-15px);
-                transform: scale(1.1) translateY(-15px);
+        -webkit-transform: scale(1.1) translateY(toRem(-15));
+                transform: scale(1.1) translateY(toRem(-15));
         -webkit-transform-origin: top;
                 transform-origin: top;
     }
@@ -113,8 +115,104 @@
                 transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(420px);
-                transform: translateX(420px);
+        -webkit-transform: translateX(toRem(420));
+                transform: translateX(toRem(420));
     }
 }
+ 
+@keyframes paper-plane-animation {
+    0% {transform: translateY(0) ;}
+    25% {transform: translateY(toRem(-30));}
+    50% {transform: translateY(0);}
+    75% {transform:  translateY(toRem(30));}
+    100% {transform:  translateY(0);}
+}
+
+.plane {
+    animation: paper-plane-animation 3s linear infinite;
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(toRem(12));
+                filter: blur(toRem(12));
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+.cloud {
+    -webkit-animation-name: cloud-movement;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+
+    -moz-animation-name: cloud-movement;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: forwards;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 8s;
+
+    animation-name: cloud-movement;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+.slow {
+    -webkit-animation-duration: 9.2s;
+    -moz-animation-duration: 9.2s;
+    animation-duration: 9.2s;
+}
+
+.slower {
+    -webkit-animation-duration: 11.2s;
+    -moz-animation-duration: 11.2s;
+    animation-duration: 11.2s;
+}
+
+.slowest {
+    -webkit-animation-duration: 13.5s;
+    -moz-animation-duration: 13.5s;
+    animation-duration: 13.5s;
+}
+
+.super-slow {
+    -webkit-animation-duration: 20.5s;
+    -moz-animation-duration: 20.5s;
+    animation-duration: 20.5s;
+}
   
+@keyframes cloud-movement {
+    0% {
+        opacity: 0.1;
+        -webkit-transform: translateX(toRem(300));
+        -moz-transform: translateX(toRem(300));
+        transform: translateX(toRem(300));
+    }
+    10% {
+
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(toRem(-500));
+        -moz-transform: translateX(toRem(-500));
+        transform: translateX(toRem(-500));
+    }
+}

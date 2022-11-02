@@ -17,6 +17,9 @@
             @include mdMinBreakPoint {
                 width: toRem(174);
             }
+            @include lgMinBreakPoint {
+                width: toRem(106);
+            }
         }
         &-vertical{
             width: toRem(3);

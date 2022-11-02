@@ -2,7 +2,7 @@ import React from 'react';
 import './TwoColumns.scss';
 
 import Overlay from '../../atoms/overlay/Overlay';
-import Loader from '../../atoms/loader/Loader';
+import LoaderDesktop from '../../molecules/loaderDesktop/LoaderDesktop';
 import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
 
 function TwoColumns({pages}) {
@@ -90,7 +90,7 @@ function TwoColumns({pages}) {
               {/* <SideDrawer/> */}
           </div>
         ) : (
-          <Loader />
+          <LoaderDesktop />
         )}
 
       </main>

@@ -1,13 +1,8 @@
 import './App.scss';
 import React from 'react';
-import TwoColumns from './components/layout/twoColumns/TwoColumns';
-import {pages} from './data/pagesData';
-import {columnLeftData} from './data/columnLeftData';
-import {columnRightData} from './data/columnRightData';
-import SingleColumn from './components/layout/singleColumn/SingleColumn';
-
+import MainContainer from './components/layout/mainContainer/MainContainer';
 import { Provider } from 'react-redux';
-
+import {pages} from './data/pagesData';
 import store from './store';
 import SideDrawer from './components/organisms/sideDrawer/SideDrawer';
 
@@ -30,12 +25,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <div className='App-test'></div> */}
-        {
-          isDesktop 
-            ? <TwoColumns pages={pages}/>
-            : <SingleColumn pages = {pages}/>
-        }
+        <MainContainer isDesktop={isDesktop} pages={pages} />
         <SideDrawer />
       </div>
     </Provider>
