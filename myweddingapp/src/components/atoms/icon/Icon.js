@@ -2,10 +2,12 @@ import React from 'react';
 import './Icon.scss';
 import Icons from '../../../assets/icons/icons.svg';
 
-function Icon({name, size, color, animation, classes}) {
+function Icon({name, width, height, color, animation, classes}) {
+  let widthPx = width ? `${width}px` : null;
+  let heightPx = height ? `${height}px` : null;
+  let viewbox = height && width ? `0 0 ${width} ${height}` : null;
   return (
-    // <img class={`icon icon--${size}`} src={require(`../../../assets/icons/${name}.${type}`)} alt={name} />
-    <svg className={`icon icon-${name} ${animation} ${classes}`} fill={color} width={size} height={size}>
+    <svg className={`icon icon-${name} ${animation} ${classes}`} fill={color} width={widthPx} height={heightPx} viewBox={viewbox}>
       <use xlinkHref={`${Icons}#icon-${name}`} />
     </svg>
   )

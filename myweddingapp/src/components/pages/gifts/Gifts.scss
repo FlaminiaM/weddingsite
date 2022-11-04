@@ -5,7 +5,7 @@
     height: 70vh;
     padding-top: $m-md;
     margin-bottom: $m-md;
-    @include mdMinBreakPoint {
+    @include lgMinBreakPoint {
         height: 95vh;
         padding-top: $m-xxl;
     }

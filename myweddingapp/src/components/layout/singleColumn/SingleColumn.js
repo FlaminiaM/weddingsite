@@ -2,7 +2,7 @@ import React from 'react';
 import './SingleColumn.scss';
 
 import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
-import Loader from '../../atoms/loader/Loader';
+import LoaderMobile from '../../molecules/loaderMobile/LoaderMobile';
 
 
 function SingleColumn({pages}) {
@@ -41,7 +41,7 @@ function SingleColumn({pages}) {
             ))}
           </div>
         ) : (
-          <Loader />
+          <LoaderMobile />
         )}
     </>
   )

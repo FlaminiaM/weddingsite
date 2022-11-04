@@ -15,7 +15,7 @@ function Home() {
         <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
         <Button classes='mb-xl mt-xl' type="button" text="RSVP" />
         <p className='mb-xl mt-xl'>View details</p>
-        <Icon classes="mt-xxl" name="arrow-down" size={66} animation="bounce"/> 
+        <Icon classes="mt-xxl" name="arrow-down" width={66} height={40} animation="bounce"/> 
       </div>
     </PageContainer>
   )

@@ -1,18 +1,13 @@
 import './App.scss';
 import React from 'react';
-import TwoColumns from './components/layout/twoColumns/TwoColumns';
-import {pages} from './data/pagesData';
-import {columnLeftData} from './data/columnLeftData';
-import {columnRightData} from './data/columnRightData';
-import SingleColumn from './components/layout/singleColumn/SingleColumn';
-
+import MainContainer from './components/layout/mainContainer/MainContainer';
 import { Provider } from 'react-redux';
-
+import {pages} from './data/pagesData';
 import store from './store';
 import SideDrawer from './components/organisms/sideDrawer/SideDrawer';
 
 function App() {
-  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 768);
+  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 992);
   
   React.useEffect(() => {
     window.addEventListener('resize', checkDevice);
@@ -20,9 +15,9 @@ function App() {
   });
   
   const checkDevice = () => {
-    if(window.innerWidth > 768 && !isDesktop){
+    if(window.innerWidth >= 992 && !isDesktop){
       setIsDesktop(true);
-    } else if(window.innerWidth < 768 && isDesktop){
+    } else if(window.innerWidth < 992 && isDesktop){
       setIsDesktop(false);
     }
   }
@@ -30,12 +25,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <div className='App-test'></div> */}
-        {
-          isDesktop 
-            ? <TwoColumns pages={pages}/>
-            : <SingleColumn pages = {pages}/>
-        }
+        <MainContainer isDesktop={isDesktop} pages={pages} />
         <SideDrawer />
       </div>
     </Provider>

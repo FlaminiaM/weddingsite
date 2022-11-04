@@ -10,8 +10,8 @@ function TimelineSingleComponent({icon, label, time, position, elementNumber}) {
             {icon}
          </div>
         <div className='timeline-single-component-body-right'>
-            <span className="mb-lg">{label}</span>
-            <span className="mb-lg">{time}</span>
+            <span className="timeline-single-component-body-right-label ">{label}</span>
+            <span className="timeline-single-component-body-right-time ">{time}</span>
             <Line type="timeline" orientation="horizontal" />
         </div>
     </div>

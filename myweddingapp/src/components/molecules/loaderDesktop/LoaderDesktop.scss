@@ -1,0 +1,89 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+
+    &-wrapper{
+        position: relative;
+        &-bg{
+            height: toRem(230);
+            width: toRem(525);
+            margin-right: toRem(200);
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: toRem(3) 0px toRem(14) toRem(2) rgba(0,0,0,0.29);
+            z-index: 1;
+
+            @include lgMinBreakPoint {
+                height: toRem(280);
+                width: toRem(640);
+                margin-right: toRem(300);
+            }
+            //da 1200 in poi
+            @include xlMinBreakPoint {
+                height: toRem(320);
+                width: toRem(732);
+                margin-right: toRem(350);
+            }
+    
+            &-img{
+                position: absolute;
+                height: toRem(200);
+                top: toRem(17);
+                left: toRem(-131);
+
+                @include lgMinBreakPoint {
+                    height: toRem(250);
+                    top: toRem(17);
+                    left: toRem(-66);
+                }
+                @include xlMinBreakPoint {
+                    height: toRem(300);
+                    top: toRem(30);
+                    left: toRem(-35);
+                }
+            }
+        }
+
+        &-message{
+            height: toRem(229);
+            width: toRem(235);
+            background-color: white;   
+            box-shadow: toRem(3) 0px toRem(14) toRem(2) rgba(0,0,0,0.29);   
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            position: absolute;
+            left: toRem(78);
+
+            & h1{
+                font-size: toRem(45);
+
+                @include lgMinBreakPoint {
+                    font-size:toRem(76);
+                }
+            }
+
+            @include lgMinBreakPoint {
+                height: toRem(279);
+                width: toRem(350);
+                left: toRem(177);
+            }
+            @include xlMinBreakPoint {
+                height: toRem(319);
+                width: toRem(400);
+                left: toRem(260);
+            }
+        }
+    }
+
+    &--flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -71,8 +71,19 @@ p {
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 300;
-    font-size: toRem(20);
-    line-height: toRem(24);
+    font-size: toRem(16);
+    line-height: toRem(20);
+
+    @include mdMinBreakPoint {
+        font-size: toRem(18);
+        line-height: toRem(22);
+    }
+
+    @include lgMinBreakPoint {
+        font-size: toRem(20);
+        line-height: toRem(24);
+    }
+
 }
 
 span{

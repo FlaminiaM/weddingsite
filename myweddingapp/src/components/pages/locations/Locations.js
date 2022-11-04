@@ -26,7 +26,7 @@ function Locations() {
           venueAddress= "Via Reforzate, 43, 61040 <br/> Sant'Ippolito PU, Italy"
           linkText = "View details"
           />
-           {window.innerWidth > 768 ? <Icon classes="mt-xxl" name="arrow-down" size={66} animation="bounce"/>  : null} 
+           {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66}  height={20} animation="bounce"/>  : null} 
       </div>
     </PageContainer>
   )

@@ -11,7 +11,7 @@
     margin-bottom: $m-xxl;
     margin-top: $m-md;
     
-    @include mdMinBreakPoint {
+    @include lgMinBreakPoint {
         margin-bottom: 0;
     }
 }
