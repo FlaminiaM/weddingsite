@@ -14,7 +14,7 @@
         justify-content: flex-start;
     }
 
-    @include mdMinBreakPoint {
+    @include lgMinBreakPoint {
         padding-left: $m-xxl;
         padding-right: $m-xxl;
         min-height: 100vh;

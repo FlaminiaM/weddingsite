@@ -7,7 +7,7 @@ import store from './store';
 import SideDrawer from './components/organisms/sideDrawer/SideDrawer';
 
 function App() {
-  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 768);
+  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 992);
   
   React.useEffect(() => {
     window.addEventListener('resize', checkDevice);
@@ -15,9 +15,9 @@ function App() {
   });
   
   const checkDevice = () => {
-    if(window.innerWidth > 768 && !isDesktop){
+    if(window.innerWidth >= 992 && !isDesktop){
       setIsDesktop(true);
-    } else if(window.innerWidth < 768 && isDesktop){
+    } else if(window.innerWidth < 992 && isDesktop){
       setIsDesktop(false);
     }
   }
