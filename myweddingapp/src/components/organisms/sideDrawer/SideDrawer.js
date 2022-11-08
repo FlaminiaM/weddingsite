@@ -18,8 +18,13 @@ function SideDrawer({isOpen, handleDrawerState}) {
   }
   return (
     <div className={elementClasses}>
-        <h1>Side drawer</h1>
         <div className='side-drawer-close-icon' onClick={()=> handleDrawerState()}><Icon classes="mt-xxl" name="arrow-down" width={66} height={20}/> </div>
+        <div className='side-drawer-sections'>
+          <div className='side-drawer-sections-section-one'>
+          </div>
+          <div className='side-drawer-sections-section-two'>
+          </div>
+        </div>
     </div>
   )
 }

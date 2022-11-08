@@ -3,7 +3,7 @@ import Locations from '../components/pages/locations/Locations';
 import Timeline from '../components/pages/timeline/Timeline';
 import Gifts from "../components/pages/gifts/Gifts";
 import Rsvp from "../components/pages/rsvp/Rsvp";
-import Urbino from "../components/pages/urbino/Urbino";
+import ContactUs from "../components/pages/contactUs/ContactUs";
 
 import Airplane from '../assets/gifs/airplane.gif';
 
@@ -86,7 +86,7 @@ export const pages = [
     },
     {
         id: 6,
-        pageName: "urbino",
+        pageName: "contactUs",
         sectionIntro: {
             showDesktopOnly: false,
             title: "Urbino",
@@ -96,7 +96,7 @@ export const pages = [
         }, 
         sectionContent: {
             showDesktopOnly: false,
-            component: Urbino,
+            component: ContactUs,
         }
     },
 
