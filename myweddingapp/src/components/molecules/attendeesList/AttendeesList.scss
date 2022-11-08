@@ -1,60 +1,20 @@
 // @import '../../../styles/_variables';
 @import '../../../styles/_typography';
 
-// .attendees-table{
-//     display: table;
-//     width: 100%;
-//     border-collapse: collapse;
-//     font-family: $secondary-font;
-//     &-row{
-//         display: table-row;
-//         border-collapse: collapse;
-//         &--header{
-//             background-color: $success-dark;
-//             padding: toRem(10);
-//             color: $white;
-//             font-weight: bold;
-//             height: 30px;
-//         }  
-        
-//         &--body{
-//             background-color: $success-light;
-//             border: 1px solid $success-dark;
-//             min-height: 50px;
-            
-//         }
-//     }
-
-//     &-column{
-//         display: table-cell;
-//         vertical-align: middle;
-//         &--data{
-//             border-left: 1px solid;
-//             padding: toRem(10);
-//         }
-//         &--header{
-//             padding: toRem(8);
-//             &:first-child{
-//                 border-top-left-radius: toRem(8);
-//             }
-//             &:last-child{
-//                 border-top-right-radius: toRem(8);
-//             }
-//         }
-//     }
-// }
-
-
 .attendees-table{
     border-collapse: collapse;
     margin: toRem(25) 0;
     font-size: 0.9em;
     font-family: $secondary-font;
-    min-width: toRem(400);
+    // min-width: toRem(400);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 
+    @include lgMinBreakPoint {
+        min-width: toRem(400);
+    }
+
     & thead tr{
-        background-color: #009879;
+        background-color: #af9a99;
         color: #ffffff;
         text-align: center;
         border-collapse: collapse;
@@ -83,6 +43,6 @@
     }
     
     & tbody tr:last-of-type {
-        border-bottom: toRem(2) solid #009879;
+        border-bottom: toRem(2) solid #C3ADAC;
     }
 }

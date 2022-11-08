@@ -12,6 +12,7 @@ import AttendeesList from '../../molecules/attendeesList/AttendeesList'
 
 function RsvpForm({attendees, handleAddAttendee}) {
   const base = new airtable({apiKey: 'keyvOkFwPsBzIWG6W'}).base('appla7qDMc7scyGXp');
+  const [isFormLoading, setIsFormLoading] = React.useState(false);
   const [formSubmittedSuccess, setFormSubmittedSucces] = React.useState(false);
   const [formErrors, setFormErrors] = React.useState({
     firstname: {
@@ -93,13 +94,13 @@ function RsvpForm({attendees, handleAddAttendee}) {
       }
     })
     setFormErrors(errors);
-    console.log(errorsArray)
     return errorsArray;
   }
 
   const formSubmitHandler = () =>{
     const errors = validateForm();
     if(errors.length === 0){
+      setIsFormLoading(true);
       base('AttendanceData').create([
         {
           "fields": {...formState}
@@ -110,7 +111,8 @@ function RsvpForm({attendees, handleAddAttendee}) {
           return;
         } else{
           setFormSubmittedSucces(true);
-          handleAddAttendee(formState)
+          handleAddAttendee(formState);
+          setIsFormLoading(false);
         }
       });
     }
@@ -135,16 +137,15 @@ function RsvpForm({attendees, handleAddAttendee}) {
               key= {i}
             />
           ))}
-          <Button classes="mt-xl" type="button" text="CONFIRM" clickHandler={formSubmitHandler}/>
+          <Button classes="mt-xl" type="button" text="CONFIRM" isLoading={isFormLoading} clickHandler={formSubmitHandler}/>
           </form>
       </>
       : <>
         <Notification type="success" message={`Thanks for letting us know!`} />
         <AttendeesList attendees={attendees}/>
         <h3 className='mb-xxl'>Is someone coming with you?</h3> 
-        <Button type='button' text='Add another person' clickHandler={addPersonHandler}/>
+        <Button classes="mb-xxl" type='button' text='Add another person' clickHandler={addPersonHandler}/>
       </>
-      
   )
 }
 

@@ -1,7 +1,16 @@
 @import '../../../styles/_variables';
 
-.urbino{
+.contactUs{
     position: relative;
+
+    &-contact-wrapper{
+        &-info{
+            
+            & svg{
+                margin-right: toRem(10);
+            }
+        }
+    }
     & .guests-info{
         display: flex;
         align-items: center;

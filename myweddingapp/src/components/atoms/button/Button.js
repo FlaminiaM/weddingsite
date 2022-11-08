@@ -1,9 +1,14 @@
 import React from 'react';
 import './Button.scss';
 
-function Button({type, text, classes, clickHandler}) {
+import LoadingIcon from '../loadingIcon/LoadingIcon';
+
+function Button({type, text, classes, clickHandler, isLoading}) {
+  console.log("isLoading", isLoading)
   return (
-    <button className={`btn btn--primary ${classes}`} type={type} onClick={clickHandler}>{text}</button>
+    <button className={`btn btn--primary ${classes}`} type={type} onClick={clickHandler}>
+      {!isLoading ? text : <LoadingIcon />}
+    </button>
   )
 }
 
