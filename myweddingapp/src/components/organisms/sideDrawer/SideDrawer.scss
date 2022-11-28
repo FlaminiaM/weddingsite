@@ -5,7 +5,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: $bg-primary;
     width: 100vw;
     right: -2000px;
     z-index: 2;
@@ -13,14 +13,25 @@
     overflow-y: scroll;
 
     @include lgMinBreakPoint {
-        width: 80vw;
+        width: 60vw;
     }
 
-    &-close-icon{
+    &-sections{
+        padding-left: toRem(18);
+        padding-right: toRem(18);
+        margin-top: toRem(-20);
+        @include lgMinBreakPoint {
+            margin-top: toRem(-40);
+            padding-left: toRem(56);
+            padding-right: toRem(56);
+        }
+    }
+
+    &-close-icon--arrow{
         position: sticky;
         top: 50%;
-        left: 5%;
-        // transform: translate(-50%, -50%);
+        left: 0;
+        cursor: pointer;
         & svg{
             transform: rotate(270deg);
             width: toRem(30);
@@ -32,4 +43,22 @@
             }
         }
     }
+
+    &-close-icon--cross{
+        cursor: pointer;
+        position: absolute;
+        top: toRem(10);
+        right: toRem(18);
+    }
+
+    &-backdrop{
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: #000000bf;
+    }
 }
+

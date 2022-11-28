@@ -1,0 +1,45 @@
+@import '../../../styles/_variables';
+@import '../../../styles/mixins';
+
+.location-info{
+    text-align: center;
+
+    & h2{
+        @include lgMinBreakPoint {
+            font-size: 2rem;
+        }
+    }
+
+    &-directions{
+        &-title{
+            font-weight: bold;
+        }
+
+        &-section{
+            & .title-with-icon{
+                & h2{
+                    margin-top: 0;
+                }
+            }
+            &-content{
+                max-width: 80%;
+                margin: 0 auto;
+
+                & .paid-parking-info a{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#location-info-address-map{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+
+    & iframe{
+        height: 100%;
+        width: 100%;
+    }
+}

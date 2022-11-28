@@ -2,8 +2,9 @@ import React from 'react';
 import './SideDrawer.scss';
 import { connect, ReactReduxContext } from 'react-redux'
 import {handleDrawerState} from '../../../redux/actions/drawerActions';
-
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import Icon from '../../atoms/icon/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
   let elementClasses;
@@ -17,12 +18,18 @@ function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
     elementClasses = "side-drawer slide-in-right";
   }
   return (
-    <div className={elementClasses}>
-        <div className='side-drawer-close-icon' onClick={()=> handleDrawerState()}><Icon classes="mt-xxl" name="arrow-down" width={66} height={20}/> </div>
-        <div className='side-drawer-sections'>
-          {drawerContent}
-        </div>
-    </div>
+    <>
+      {isOpen ? <div className='side-drawer-backdrop fade-in'></div> : null}
+      <div className={elementClasses}>
+          <div className='side-drawer-wrapper'>
+            <span className='side-drawer-close-icon side-drawer-close-icon--arrow' onClick={()=> handleDrawerState()}><Icon classes="mt-xxl" name="arrow-down" width={66} height={20}/> </span>
+            <span className='side-drawer-close-icon side-drawer-close-icon--cross' onClick={()=> handleDrawerState()}><FontAwesomeIcon icon={faTimes} /></span>
+            <div className='side-drawer-sections'>
+              {drawerContent}
+            </div>
+          </div>
+      </div>
+    </>
   )
 }
 const mapStateToProps = (state) => {

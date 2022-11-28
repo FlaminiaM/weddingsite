@@ -5,7 +5,7 @@ import PageContainer from '../../layout/pageContainer/PageContainer';
 import LocationDetails from '../../organisms/locationDetails/LocationDetails';
 import Image from '../../atoms/image/Image';
 import Icon from '../../atoms/icon/Icon';
-import CeremonyInfo from '../../pages/ceremonyInfo/CeremonyInfo';
+import LocationInfo from '../../pages/locationInfo/LocationInfo';
 import VenueInfo from '../../pages/venueInfo/VenueInfo';
 import Line from '../../atoms/line/Line';
 
@@ -21,7 +21,7 @@ function Locations() {
           venuName = "Cattedrale di Santa Maria Assunta"
           venueAddress= "Via Puccinotti, 29, 61029 <br/> Urbino PU, Italy"
           linkText = "View details"
-          insideDrawerComponent={<CeremonyInfo />}
+          insideDrawerComponent={<LocationInfo locationType="ceremony"/>}
           />
         <Line type="divider" orientation="horizontal" />
         <LocationDetails 
@@ -30,7 +30,7 @@ function Locations() {
           venuName = "Ristorante Casa Londei"
           venueAddress= "Via Reforzate, 43, 61040 <br/> Sant'Ippolito PU, Italy"
           linkText = "View details"
-          insideDrawerComponent={<VenueInfo />}
+          insideDrawerComponent={<LocationInfo locationType="venue"/>}
           />
            {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66}  height={20} animation="bounce"/>  : null} 
       </div>

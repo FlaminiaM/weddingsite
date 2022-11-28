@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     @include lgMinBreakPoint {
-        height: 95vh;
+        // height: 95vh;
         padding-top: $m-xxl;
     }
 
@@ -29,7 +29,7 @@
             
             & img{
                 display: block;
-                width: 100%;
+                width: 90%;
                 height: auto;
             }
         }

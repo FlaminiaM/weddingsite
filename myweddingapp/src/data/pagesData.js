@@ -5,8 +5,6 @@ import Gifts from "../components/pages/gifts/Gifts";
 import Rsvp from "../components/pages/rsvp/Rsvp";
 import ContactUs from "../components/pages/contactUs/ContactUs";
 
-import Airplane from '../assets/gifs/airplane.gif';
-
 export const pages = [
     {
         id: 1,
