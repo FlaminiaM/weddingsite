@@ -20,7 +20,7 @@
         }
         .menu-container-inner{
             max-height: 100%;
-            opacity: 1;
+            display: flex;
             transform: matrix(1, 0, 0, 1, 0, 0);
         }
     }
@@ -104,7 +104,7 @@
         box-shadow: 0 10px 27px -5px rgb(44 41 37 / 25%), 0 7px 16px -8px rgb(0 0 0 / 30%);
         top: toRem(80);
         max-height: 100%;
-        opacity: 0;
+        display: none;
         transform: matrix(1, 0, 0, 1, 0, 0);
         transform-origin: 0% 50% 0px;
         background-color: $white;

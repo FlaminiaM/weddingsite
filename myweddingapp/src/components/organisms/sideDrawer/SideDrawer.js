@@ -5,7 +5,7 @@ import {handleDrawerState} from '../../../redux/actions/drawerActions';
 
 import Icon from '../../atoms/icon/Icon';
 
-function SideDrawer({isOpen, handleDrawerState}) {
+function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
   let elementClasses;
   if(isOpen === null){
     elementClasses = "side-drawer";
@@ -20,17 +20,15 @@ function SideDrawer({isOpen, handleDrawerState}) {
     <div className={elementClasses}>
         <div className='side-drawer-close-icon' onClick={()=> handleDrawerState()}><Icon classes="mt-xxl" name="arrow-down" width={66} height={20}/> </div>
         <div className='side-drawer-sections'>
-          <div className='side-drawer-sections-section-one'>
-          </div>
-          <div className='side-drawer-sections-section-two'>
-          </div>
+          {drawerContent}
         </div>
     </div>
   )
 }
 const mapStateToProps = (state) => {
   return {
-    isOpen: state.drawerState.isDrawerOpen 
+    isOpen: state.drawerState.isDrawerOpen,
+    drawerContent: state.drawerState.drawerContent
   }
 }
 export default connect(mapStateToProps, {handleDrawerState} )(SideDrawer);

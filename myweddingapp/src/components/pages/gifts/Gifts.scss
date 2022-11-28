@@ -12,6 +12,12 @@
         padding-top: $m-xxl;
     }
 
+    &-currency{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &-bottom{
         &-image{
             width: toRem(120);
