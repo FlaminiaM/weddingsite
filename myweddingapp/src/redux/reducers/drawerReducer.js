@@ -1,7 +1,8 @@
-import { DRAWER_STATE } from '../actions/types';
+import { DRAWER_STATE, SET_DRAWER_CONTENT } from '../actions/types';
 
 const initialState = {
   isDrawerOpen: null,
+  drawerContent: "",
 };
 
 const drawerReducer = (state = initialState, action) => {
@@ -11,6 +12,11 @@ const drawerReducer = (state = initialState, action) => {
         ...state,
         isDrawerOpen: state.isDrawerOpen === null ? true : !state.isDrawerOpen
       };
+    case SET_DRAWER_CONTENT:
+      return {
+        ...state,
+        drawerContent: action.payload
+      }
     default:
       return state;
   }

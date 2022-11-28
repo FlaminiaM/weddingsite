@@ -1,4 +1,4 @@
-import { DRAWER_STATE } from './types';
+import { DRAWER_STATE, SET_DRAWER_CONTENT  } from './types';
 
 
 export const handleDrawerState = () => dispatch => {
@@ -6,3 +6,10 @@ export const handleDrawerState = () => dispatch => {
         type: DRAWER_STATE
     })
 };
+
+export const setDrawerContent = (content) => dispatch => {
+    dispatch({
+        type: SET_DRAWER_CONTENT,
+        payload: content
+    })
+}

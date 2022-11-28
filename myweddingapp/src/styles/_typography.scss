@@ -67,7 +67,7 @@ h4 {
     }
 }
 
-p {
+p, li:not(.menu-item) {
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 300;

@@ -5,8 +5,6 @@ import Gifts from "../components/pages/gifts/Gifts";
 import Rsvp from "../components/pages/rsvp/Rsvp";
 import ContactUs from "../components/pages/contactUs/ContactUs";
 
-import Airplane from '../assets/gifs/airplane.gif';
-
 export const pages = [
     {
         id: 1,
@@ -17,7 +15,7 @@ export const pages = [
             subtitle: "We can’t wait  to share our special <br/> day with you.",
             pageTitleTextColor: 'white',
             // gif: Airplane,
-            imageUrl: 'https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/HzhDnFa3SzWYSKFaA8Kw_IMG_20220829_175835_606.jpg/st%3D2022-09-05T13%253A51%253A30Z%26se%3D2023-09-05T13%253A56%253A30Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3Dg3xBW2qckm8ABLOnT7yMRzXi69Lg0TOVYRNBSqFOKsw%253D',
+            imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/home_qadol9.jpg',
         }, 
         sectionContent: {
             showDesktopOnly: false,
@@ -32,7 +30,7 @@ export const pages = [
             title: "Save the date",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
-            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/qSUkbzk6THyuTNpcCy7B_IMG-20220617-WA0013.jpg/st%3D2022-09-07T08%253A04%253A05Z%26se%3D2023-09-07T08%253A09%253A05Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DcB7vlsDXLq8xcukjJmu9wSch5430wyQ%252Bg0GClxM50X0%253D"
+            imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668271433/IMG-20220617-WA0013_swbasa.jpg"
         }, 
         sectionContent: {
             showDesktopOnly: false,
@@ -47,7 +45,7 @@ export const pages = [
             title: "The wedding",
             subtitle: "",
             pageTitleTextColor: 'white',
-            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/KKXP9oEMRUmDmKGdYEgj_20220611_090434.jpg/st%3D2022-09-07T08%253A04%253A05Z%26se%3D2023-09-07T08%253A09%253A05Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DcB7vlsDXLq8xcukjJmu9wSch5430wyQ%252Bg0GClxM50X0%253D"
+            imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/timeline_mytswh.jpg"
         }, 
         sectionContent: {
             showDesktopOnly: false,
@@ -61,8 +59,8 @@ export const pages = [
             showDesktopOnly: false,
             title: "To our next adventure...",
             subtitle: "",
-            pageTitleTextColor: 'black',
-            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/yMN0qv5TwGBTxpU5TL0f_1%201.jpg/st%3D2022-09-07T14%253A51%253A27Z%26se%3D2023-09-07T14%253A56%253A27Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DmYP4mYuUjX%252FWREcAdmlYTDwCiS7xJpiKxfEr3pg%252F0Pc%253D"
+            pageTitleTextColor: 'white',
+            imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/gift_ove5ti.jpg"
         }, 
         sectionContent: {
             showDesktopOnly: false,
@@ -77,7 +75,7 @@ export const pages = [
             title: "We'd love to have <br/> you with us!",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
-            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/6oECGZiWQWaBEiEN1Hqm_20220608_165613.jpg/st%3D2022-09-08T14%253A57%253A04Z%26se%3D2023-09-08T15%253A02%253A04Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3D7TIOCqm1jGwySpBX6TkeKRxZgLG1xVfPLUCiQ3SnBaM%253D"
+            imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/rsvp_wybdkf.jpg"
         }, 
         sectionContent: {
             showDesktopOnly: false,
@@ -92,7 +90,7 @@ export const pages = [
             title: "Urbino",
             subtitle: "Saturday 8th July 2023",
             pageTitleTextColor: 'white',
-            imageUrl: "https://ceremony-media.withjoy.com:443/ir/l/e5faf3a0fad83a5ba5a5f2928dbfd50a8f4c493c6d2e65f45/1nyzJ7JQemhuGpkhGWf4_marian-luzi-NI0bY-VvMi8-unsplash.jpg/st%3D2022-09-09T10%253A57%253A01Z%26se%3D2023-09-09T11%253A02%253A01Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DY28R%252BplQdT2qhuPa5W2XhJZmmPQMdPSEHWx143zPPzs%253D"
+            imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/urbino_twlusw.jpg"
         }, 
         sectionContent: {
             showDesktopOnly: false,
