@@ -1,7 +1,7 @@
 import React from 'react';
 import './RsvpForm.scss';
 import airtable from 'airtable';
-import {formFields} from '../../../data/formfields';
+import {formFieldsData} from '../../../data/formfields';
 import { connect, ReactReduxContext } from 'react-redux'
 import {handleAddAttendee} from '../../../redux/actions/attendeeActions';
 
@@ -10,8 +10,10 @@ import Button from '../../atoms/button/Button';
 import Notification from '../../molecules/notification/Notification';
 import AttendeesList from '../../molecules/attendeesList/AttendeesList'
 
-function RsvpForm({attendees, handleAddAttendee}) {
+function RsvpForm({attendees, handleAddAttendee, isItalian}) {
   const base = new airtable({apiKey: 'keyvOkFwPsBzIWG6W'}).base('appla7qDMc7scyGXp');
+  const formFields = isItalian ? formFieldsData["italian"] : formFieldsData["english"];
+  const subtitle = isItalian ? "Facci sapere se potrai esserci!" : "Let us know if you can come and enjoy our special day with us!";
   const [isFormLoading, setIsFormLoading] = React.useState(false);
   const [formSubmittedSuccess, setFormSubmittedSucces] = React.useState(false);
   const [formErrors, setFormErrors] = React.useState({
@@ -82,7 +84,7 @@ function RsvpForm({attendees, handleAddAttendee}) {
       if((formState[element.inputName] === "" || formState[element.inputName] == [])&& element.isMandatory){
         errors[element.inputName] = {
           hasError: true,
-          errorMessage: "Please fill in this field"
+          errorMessage: formFields.filter(field => field.inputName === element.inputName)[0].errorMessages.empty
         }
         errorsArray.push(element.inputName)
       } else{
@@ -125,7 +127,7 @@ function RsvpForm({attendees, handleAddAttendee}) {
   return (
     !formSubmittedSuccess ? 
       <>
-        <p className='mt-xl'>Let us know if you can come and enjoy our special day with us!</p>
+        <p className='mt-xl'>{subtitle}</p>
         <form className='rsvp-form'>
           {formFields.map((formField, i) => (
             <InputGroup 
@@ -137,14 +139,14 @@ function RsvpForm({attendees, handleAddAttendee}) {
               key= {i}
             />
           ))}
-          <Button classes="mt-xl" type="button" text="CONFIRM" isLoading={isFormLoading} clickHandler={formSubmitHandler}/>
+          <Button classes="mt-xl" type="button" text={isItalian ? "CONFERMA" : "CONFIRM"} isLoading={isFormLoading} clickHandler={formSubmitHandler}/>
           </form>
       </>
       : <>
-        <Notification type="success" message={`Thanks for letting us know!`} />
+        <Notification type="success" message={isItalian ? `Grazie per la conferma!` : `Thanks for letting us know!`} />
         <AttendeesList attendees={attendees}/>
-        <h3 className='mb-xxl'>Is someone coming with you?</h3> 
-        <Button classes="mb-xxl" type='button' text='Add another person' clickHandler={addPersonHandler}/>
+        <h3 className='mb-xxl'>{isItalian ? "Vuoi aggiungere un'altra persona?" : 'Is someone coming with you?'}</h3> 
+        <Button classes="mb-xxl" type='button' text={isItalian ? 'Aggiungi persona' : 'Add another person'} clickHandler={addPersonHandler}/>
       </>
   )
 }

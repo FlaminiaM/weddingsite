@@ -1,0 +1,10 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
+.switch-language{
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    top: toRem(16);
+    right: toRem(16);
+}

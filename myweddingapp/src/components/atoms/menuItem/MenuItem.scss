@@ -6,11 +6,16 @@
     margin: 0;
     padding: 0;
     line-height: toRem(36);
+    cursor: pointer;
+    padding-left: toRem(8);
     &-link{
         display: block;
         padding: 0 toRem(40);
         text-decoration: none;
         color: $black;
+        &--active{
+            background-color: $light-gray;
+        }
         @include smMinBreakPoint {
             padding: 0 toRem(20);
         }
