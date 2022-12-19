@@ -5,7 +5,7 @@ import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
 import LoaderMobile from '../../molecules/loaderMobile/LoaderMobile';
 
 
-function SingleColumn({pages}) {
+function SingleColumn({pages, isItalian}) {
   const [imgsLoaded, setImgsLoaded] = React.useState(false);
 
   const imagesToPreload = [];
@@ -36,7 +36,7 @@ function SingleColumn({pages}) {
             {pages.map((page, i) => (
               <React.Fragment key={page.id}>
                 {!page.sectionIntro.showDesktopOnly ? (<><SectionIntro page={page} i={i} /></>) : null}
-                {!page.sectionContent.showDesktopOnly ? (<page.sectionContent.component />) : null}
+                {!page.sectionContent.showDesktopOnly ? (<page.sectionContent.component isItalian={isItalian}/>) : null}
               </React.Fragment>
             ))}
           </div>

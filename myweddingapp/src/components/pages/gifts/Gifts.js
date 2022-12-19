@@ -1,20 +1,20 @@
 import React from 'react';
 import './Gifts.scss';
 
+import { pagesContent } from '../../../data/pagesData';
+
 import PageContainer from '../../layout/pageContainer/PageContainer';
 import suitcase from '../../../assets/images/suitcase.png';
 import Line from '../../atoms/line/Line';
 import Image from '../../atoms/image/Image';
 
-function Gifts() {
+function Gifts({isItalian}) {
+  const content = isItalian ? pagesContent["italian"]["gifts"] : pagesContent["english"]["gifts"] ;
   return (
     <PageContainer pageName="gifts">
       <div className='gifts txt-center'>
         <div className='gifts-top'>
-          <h1 className='mb-xxl'>Gifts</h1>
-          <h2 className='mb-lg'>Honeymoon funds</h2>
-          <p className='mb-md'>Celebrating with you on our wedding day is the greatest gift we could ask for! </p>
-          <p className='mb-lg'>However, if you do wish to surprise us with a gift, a contribution towards our honeymoon would be most appreciated.</p>
+          {content}
           <div>
             <div className='mb-s gifts-currency'><Image name="euro" type="png" size="xsmall"/> EUR</div>
             <div>

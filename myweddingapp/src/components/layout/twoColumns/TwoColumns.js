@@ -5,7 +5,7 @@ import Overlay from '../../atoms/overlay/Overlay';
 import LoaderDesktop from '../../molecules/loaderDesktop/LoaderDesktop';
 import SectionIntro from '../../organisms/sectionIntro/SectionIntro';
 
-function TwoColumns({pages}) {
+function TwoColumns({pages, isItalian}) {
   
   const currentPageRef = React.useRef("homepage");
   const arrayRefs = React.useRef([]);
@@ -70,7 +70,7 @@ function TwoColumns({pages}) {
 
   const displaySectionsRight = pages.map((page) => (
     <React.Fragment key={page.id}>
-      <div className='two-columns-layout-right-section' page={page.pageName} ref={addToRefs}><page.sectionContent.component /></div>
+      <div className='two-columns-layout-right-section' page={page.pageName} ref={addToRefs}><page.sectionContent.component isItalian={isItalian} /></div>
     </React.Fragment>
   ))
 
@@ -78,7 +78,7 @@ function TwoColumns({pages}) {
 
   return (
     <main>
-        { imgsLoaded ? (
+        { true ? (
           <div className='two-columns-layout'>
               <div className='two-columns-layout-left'>
                   {displaySectionsLeft}

@@ -7,19 +7,18 @@ import Image from '../../atoms/image/Image';
 import {handleDrawerState} from '../../../redux/actions/drawerActions';
 import { connect } from 'react-redux';
 
+import { pagesContent } from '../../../data/pagesData';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function ContactUs(props) {
+    const content = props.isItalian ? pagesContent["italian"]["contactUs"] : pagesContent["english"]["contactUs"] ;
   return (
     <PageContainer pageName="ContactUs">
         <div className='contactUs'>
-            <h1 className='mb-xl txt-center'>See you there!</h1>
-            <div className='txt-center'>
-                <p className='mb-xl mt-xl'>Urbino has a special place in our hearts and we cannot wait to celebrate our special day in this wonderful city with you!</p>
-                <p className='mb-xl'>Should you need anything don’t hesitate to get in touch with us via email or via WhatsApp!</p>
-            </div>
+            {content.intro}
             <div className='mb-xl txt-center'>
                 <p className='mb-s' style={{fontWeight: 'bold'}}>Flaminia</p>
                 <div className='contactUs-contact-wrapper'>
@@ -35,14 +34,14 @@ function ContactUs(props) {
                 </div>
             </div>
             <Line type="divider" orientation="horizontal" />
-            <h3 className='txt-center mt-xxl'>Need help finding an <br/> an accomodation?</h3>
+            {content.needHelp}
             <div className='guests-info mt-xxl mb-lg'>
                 <Image 
                     name = "luggage"
                     size = "large" 
                     type ="png"
                 />
-                <h4 onClick={()=> props.handleDrawerState()}>Guests information</h4>
+                <h4 onClick={()=> props.handleDrawerState()}>{content.guestInfo}</h4>
             </div>
         </div>
     </PageContainer>

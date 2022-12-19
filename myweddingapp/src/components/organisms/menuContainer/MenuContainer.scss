@@ -111,9 +111,11 @@
         @include lgMinBreakPoint {
             min-width: toRem(350);
             left: toRem(30);
+            top: toRem(96);
         }
         &-list{
             margin: toRem(16);
+            width: 100%;
         }
         &--show{
             max-height: 100%;
