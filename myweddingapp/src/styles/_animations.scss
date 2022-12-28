@@ -56,13 +56,13 @@
 ///
 @keyframes slide-in-right{
     0%{
-        transform:translateX(toRem(200));
-        -webkit-transform: translateX(toRem(200));
+        transform:translateX(toRem(2000));
+        -webkit-transform: translateX(toRem(2000));
         opacity: 0;
     }
     100%{
-        transform:translateX(toRem(0));
-        -webkit-transform: translateX(toRem(0));
+        transform:translateX(toRem(-2000));
+        -webkit-transform: translateX(toRem(-2000));
         opacity: 1;
     }
 }
