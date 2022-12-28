@@ -13,10 +13,9 @@
             }
             &--full-h{
                 height: calc(var(--vh, 1vh) * 100);
-                position: unset;
+                position: relative;
                 & .page-title-container{
                     padding: 10% 20% 10% 8%;
-                    position: relative;
                 }
             }
         }
