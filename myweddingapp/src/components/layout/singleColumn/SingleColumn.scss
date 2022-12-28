@@ -12,8 +12,7 @@
                 height: toRem(434);
             }
             &--full-h{
-                height: 100vh;
-                //height: calc(var(--vh, 1vh) * 100);
+                height: calc(var(--vh, 1vh) * 100);
                 position: unset;
                 & .page-title-container{
                     padding: 10% 20% 10% 8%;
