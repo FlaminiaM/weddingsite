@@ -36,7 +36,7 @@ function App() {
     let vw = window.screen.width * 0.01;
     document.documentElement.style.setProperty('--vw', `${vw}px`);
   });
-
+  alert("h");
   return (
     <Provider store={store}>
       <div className="App">
