@@ -21,6 +21,7 @@ function App() {
       setIsDesktop(false);
     }
   }
+  alert(window.screen.height);
 
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
@@ -31,7 +32,7 @@ function App() {
   window.addEventListener('resize', () => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
-    alert(document.documentElement.clientHeight);
+    alert(window.screen.height);
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
 
