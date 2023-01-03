@@ -14,7 +14,7 @@ export const pages =
             sectionIntro: {
                 showDesktopOnly: false,
                 title: "Marco & Flaminia",
-                subtitle: "We can’t wait  to share our special <br/> day with you.",
+                subtitle: "Non vediamo l'ora di condividere <br/> il nostro giorno speciale con voi",
                 pageTitleTextColor: 'white',
                 // gif: Airplane,
                 imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/home_qadol9_yp9mfd.jpg',
@@ -198,9 +198,11 @@ export const pages =
 
 export const pagesContent = {
     italian: {
-        home: <><h3 className='mb-xl mt-xl'>Sabato, 8 Luglio 2023</h3>
-            <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
-            <h3 className='mb-xl mt-xl'>4pm</h3>
+        home: <>
+            <h3 className='mb-lg mt-lg'>Con gioia vi invitiamo al nostro matrimonio</h3>
+            <h2 className='mb-sm mt-lg'>Sabato, 8 Luglio 2023</h2>
+            <h3>ore 16:00</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>(PU)</h3>
             <p className='mb-xl mt-xl'>Vedi dettagli</p></>,
         locations: {
             ceremony:{
@@ -249,7 +251,7 @@ export const pagesContent = {
             },
         ],
         gifts: <>
-            <h1 className='mb-xxl'>Gifts</h1>
+            <h1 className='mb-xxl'>Lista nozze</h1>
             <h2 className='mb-lg'>Viaggio di nozze</h2>
             <p className='mb-md'>Festeggiare con voi e' il regalo piu' bello che potessimo desiderare!</p>
             <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe una contribuzione per il nostro viaggio di nozze.</p>
@@ -267,10 +269,13 @@ export const pagesContent = {
         } 
     }, 
     english: {
-        home: <><h3 className='mb-xl mt-xl'>Saturday, 8th July 2023</h3>
-            <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
-            <h3 className='mb-xl mt-xl'>4pm</h3>
-            <p className='mb-xl mt-xl'>View details</p></>,
+        home: <>
+            <h3 className='mb-lg mt-lg'>We are happy to invite you to our wedding</h3>
+            <h2 className='mb-sm mt-lg'>Saturday, 8th July 2023</h2>
+            <h3>at 4:00pm</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>Italy</h3>
+            <p className='mb-xl mt-xl'>View details</p>
+        </>,    
         locations: {
             ceremony: {
                 sectionTitle:"Ceremony", 
