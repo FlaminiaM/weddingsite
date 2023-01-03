@@ -2,7 +2,10 @@ import React from 'react';
 import './AttendeesList.scss';
 import {attendanceOptions, dietaryRequirementsOptions} from '../../../data/formfields';
 
-function AttendeesList({attendees}) {
+function AttendeesList({attendees, isItalian}) {
+  console.log("attendees", attendees)
+  const attendanceOptionsLang = isItalian ? attendanceOptions["italian"] : attendanceOptions["english"];
+  const dietaryRequirementsOptionsLang = isItalian ? dietaryRequirementsOptions["italian"] : dietaryRequirementsOptions["english"];
   return (
     // <div className='attendees-table mt-xxl'>
     //   <div className='attendees-table-row attendees-table-row--header'>
@@ -28,11 +31,11 @@ function AttendeesList({attendees}) {
         </tr>
       </thead>
       <tbody>
-      {attendees.map(attendee => (
-          <tr className='attendees-table-row attendees-table-row--body'>
+      {attendees.map((attendee, i) => (
+          <tr key={i} className='attendees-table-row attendees-table-row--body'>
             <td className='attendees-table-column attendees-table-column--data'>{attendee.firstname} {attendee.lastname}</td>
-            <td className='attendees-table-column attendees-table-column--data'>{attendanceOptions.filter(option => option.value === attendee.attendance)[0].label}</td>
-            <td className='attendees-table-column attendees-table-column--data'><ul>{attendee.dietaryrequirements.map(req => <li>{dietaryRequirementsOptions.filter(option => option.value === req)[0].label}</li>)}</ul></td>
+            <td className='attendees-table-column attendees-table-column--data'>{attendanceOptionsLang.filter(option => option.value === attendee.attendance)[0].label}</td>
+            <td className='attendees-table-column attendees-table-column--data'><ul>{attendee.dietaryrequirements.map(req => <li>{dietaryRequirementsOptionsLang.filter(option => option.value === req)[0].label}</li>)}</ul></td>
           </tr>
         ))}
       </tbody>
