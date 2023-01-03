@@ -15,7 +15,8 @@ function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
     
     // if scroll happens, set it to the previous value
     window.onscroll = function() {
-    window.scrollTo(LeftScroll, TopScroll);
+      window.scrollTo(LeftScroll, TopScroll);
+      alert("hello")
             };
     }
     
