@@ -1,0 +1,8 @@
+@import '../../../styles/_mixins';
+
+.two-columns-layout-right-section[page='rsvp']{
+    min-height: calc(var(--vh, 1vh) * 70);
+}
+#page-rsvp{
+    min-height: calc(var(--vh, 1vh) * 70);
+}
