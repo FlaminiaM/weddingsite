@@ -1,6 +1,6 @@
 @import './variables';
 
-body.no-scroll{
+html.no-scroll, body.no-scroll{
 	margin: 0; 
 	height: 100%; 
 	overflow: hidden

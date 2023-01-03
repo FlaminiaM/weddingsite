@@ -12,9 +12,11 @@ function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
     elementClasses = "side-drawer";
   } else if(!isOpen){
     document.querySelector("body").classList.remove("no-scroll");
+    document.querySelector("html").classList.remove("no-scroll");
     elementClasses = "side-drawer slide-out-right";
   } else if(isOpen){
-    document.querySelector("body").classList.add("no-scroll")
+    document.querySelector("body").classList.add("no-scroll");
+    document.querySelector("html").classList.add("no-scroll");
     elementClasses = "side-drawer slide-in-right";
   }
   return (
