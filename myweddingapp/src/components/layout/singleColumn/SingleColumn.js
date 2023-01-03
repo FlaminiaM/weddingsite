@@ -7,7 +7,11 @@ import LoaderMobile from '../../molecules/loaderMobile/LoaderMobile';
 
 function SingleColumn({pages, isItalian}) {
   const [imgsLoaded, setImgsLoaded] = React.useState(false);
+  const [timerLoader, setTimerLoader] = React.useState(false);
 
+  window.setTimeout(() => {
+    setTimerLoader(true);
+  }, 3000);
   const imagesToPreload = [];
   pages.map((page) => imagesToPreload.push(page.sectionIntro.imageUrl));
   
@@ -31,7 +35,7 @@ function SingleColumn({pages, isItalian}) {
   }, []);
   return (
     <>
-    { imgsLoaded ? (
+    { (imgsLoaded && timerLoader) ? (
             <div className='single-column-layout'>
             {pages.map((page, i) => (
               <React.Fragment key={page.id}>
