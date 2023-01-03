@@ -2,7 +2,14 @@
 
 .two-columns-layout-right-section[page='rsvp']{
     min-height: calc(var(--vh, 1vh) * 60);
+    @include lgMinBreakPoint {
+        min-height: 90vh;
+    }
 }
 #page-rsvp{
     min-height: calc(var(--vh, 1vh) * 60);
+    @include lgMinBreakPoint {
+        min-height: 90vh;
+        margin-top: toRem(40);
+    }
 }
