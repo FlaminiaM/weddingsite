@@ -7,4 +7,23 @@
     display: flex;
     top: toRem(16);
     right: toRem(16);
+    padding: toRem(5) toRem(5);
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: toRem(64);
+    background-color: $menu-gray;
+    backdrop-filter: blur(32px);
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: toRem(3) 0px toRem(14) toRem(2) rgba(0,0,0,0.29);
+
+    @include lgMinBreakPoint {
+        top: toRem(32);
+        right: toRem(16);
+    }
+
+    &-flag{
+        max-height: toRem(30);
+        // margin-right: toRem(5);
+    }
 }

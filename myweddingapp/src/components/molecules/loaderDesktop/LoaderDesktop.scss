@@ -2,8 +2,8 @@
 @import '../../../styles/_mixins';
 
 .loader{
-    width: calc(var(--vw, 1vw) * 100);
-    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    height: 100vh;
     background-color: $white;
 
     &-wrapper{

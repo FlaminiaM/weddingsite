@@ -14,10 +14,10 @@ export const pages =
             sectionIntro: {
                 showDesktopOnly: false,
                 title: "Marco & Flaminia",
-                subtitle: "We can’t wait  to share our special <br/> day with you.",
+                subtitle: "Non vediamo l'ora di condividere <br/> il nostro giorno speciale con voi",
                 pageTitleTextColor: 'white',
                 // gif: Airplane,
-                imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/home_qadol9.jpg',
+                imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/home_qadol9_yp9mfd.jpg',
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -32,7 +32,7 @@ export const pages =
                 title: "Save the date",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668271433/IMG-20220617-WA0013_swbasa.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/IMG-20220617-WA0013_swbasa_t9jnhm.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -47,7 +47,7 @@ export const pages =
                 title: "The wedding",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/timeline_mytswh.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/timeline_mytswh_d4ff8h.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -62,7 +62,7 @@ export const pages =
                 title: "To our next adventure...",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/gift_ove5ti.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/gift_ove5ti_dkmqe5.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -77,7 +77,7 @@ export const pages =
                 title: "We'd love to have <br/> you with us!",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/rsvp_wybdkf.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/rsvp_wybdkf_l0paoc.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -92,7 +92,7 @@ export const pages =
                 title: "Urbino",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/urbino_twlusw.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/urbino_twlusw_ujwsre.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -110,7 +110,7 @@ export const pages =
                 subtitle: "We can’t wait  to share our special <br/> day with you.",
                 pageTitleTextColor: 'white',
                 // gif: Airplane,
-                imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/home_qadol9.jpg',
+                imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/home_qadol9_yp9mfd.jpg',
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -125,7 +125,7 @@ export const pages =
                 title: "Save the date",
                 subtitle: "Saturday 8th July 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668271433/IMG-20220617-WA0013_swbasa.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/IMG-20220617-WA0013_swbasa_t9jnhm.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -140,7 +140,7 @@ export const pages =
                 title: "The wedding",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/timeline_mytswh.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/timeline_mytswh_d4ff8h.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -155,7 +155,7 @@ export const pages =
                 title: "To our next adventure...",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/gift_ove5ti.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/gift_ove5ti_dkmqe5.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -170,7 +170,7 @@ export const pages =
                 title: "We'd love to have <br/> you with us!",
                 subtitle: "Saturday 8th July 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/rsvp_wybdkf.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/rsvp_wybdkf_l0paoc.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -185,7 +185,7 @@ export const pages =
                 title: "Urbino",
                 subtitle: "Saturday 8th July 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1668270990/urbino_twlusw.jpg"
+                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/urbino_twlusw_ujwsre.jpg"
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -198,9 +198,11 @@ export const pages =
 
 export const pagesContent = {
     italian: {
-        home: <><h3 className='mb-xl mt-xl'>Sabato, 8 Luglio 2023</h3>
-            <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
-            <h3 className='mb-xl mt-xl'>4pm</h3>
+        home: <>
+            <h3 className='mb-lg mt-lg'>Con gioia vi invitiamo al nostro matrimonio</h3>
+            <h2 className='mb-sm mt-lg'>Sabato, 8 Luglio 2023</h2>
+            <h3>ore 16:00</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>(PU)</h3>
             <p className='mb-xl mt-xl'>Vedi dettagli</p></>,
         locations: {
             ceremony:{
@@ -225,13 +227,13 @@ export const pagesContent = {
             },
             {
                 label:"Foto",
-                time:"17:00",
+                time:"17:30",
                 icon: "camera",
                 position: "right"
             },
             {
                 label:"Cocktail",
-                time:"18:00",
+                time:"18:30",
                 icon: "cocktail",
                 position: "left"
             },
@@ -242,14 +244,14 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Party - Open bar",
-                time:"22:00",
+                label:"Open bar - Party",
+                time:"23:00",
                 icon: "party",
                 position: "left"
             },
         ],
         gifts: <>
-            <h1 className='mb-xxl'>Gifts</h1>
+            <h1 className='mb-xxl'>Lista nozze</h1>
             <h2 className='mb-lg'>Viaggio di nozze</h2>
             <p className='mb-md'>Festeggiare con voi e' il regalo piu' bello che potessimo desiderare!</p>
             <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe una contribuzione per il nostro viaggio di nozze.</p>
@@ -267,10 +269,13 @@ export const pagesContent = {
         } 
     }, 
     english: {
-        home: <><h3 className='mb-xl mt-xl'>Saturday, 8th July 2023</h3>
-            <h2 className='mb-xl mt-xl'>Duomo di Urbino, <br></br>Italy</h2>
-            <h3 className='mb-xl mt-xl'>4pm</h3>
-            <p className='mb-xl mt-xl'>View details</p></>,
+        home: <>
+            <h3 className='mb-lg mt-lg'>We are happy to invite you to our wedding</h3>
+            <h2 className='mb-sm mt-lg'>Saturday, 8th July 2023</h2>
+            <h3>at 4:00pm</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>Italy</h3>
+            <p className='mb-xl mt-xl'>View details</p>
+        </>,    
         locations: {
             ceremony: {
                 sectionTitle:"Ceremony", 
@@ -294,13 +299,13 @@ export const pagesContent = {
             },
             {
                 label:"Photos",
-                time:"5:00pm",
+                time:"5:30pm",
                 icon: "camera",
                 position: "right"
             },
             {
                 label:"Cocktail",
-                time:"6:00pm",
+                time:"6:30pm",
                 icon: "cocktail",
                 position: "left"
             },
@@ -311,8 +316,8 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Party - Open bar",
-                time:"10:00pm",
+                label:"Open bar - Party",
+                time:"11:00pm",
                 icon: "party",
                 position: "left"
             },

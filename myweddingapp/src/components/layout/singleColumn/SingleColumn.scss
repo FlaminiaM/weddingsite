@@ -2,6 +2,7 @@
 @import '../../../styles/_mixins';
 
 .single-column-layout{
+    background-color: $bg-primary;
     & .section-intro{
         &__background-image{
             position: relative;
@@ -12,7 +13,7 @@
                 height: toRem(434);
             }
             &--full-h{
-                height: calc(var(--vh, 1vh) * 100);
+                height: calc(var(--vh, 1vh) * 85);
                 position: relative;
                 & .page-title-container{
                     padding: 10% 20% 10% 8%;

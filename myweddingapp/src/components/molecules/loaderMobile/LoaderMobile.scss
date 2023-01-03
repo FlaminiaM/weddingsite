@@ -4,7 +4,9 @@
 
 .loader-m{
     width: 100vw;
-    height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 90);
+
     background-color:$bg-loader;
     position: relative;
 
