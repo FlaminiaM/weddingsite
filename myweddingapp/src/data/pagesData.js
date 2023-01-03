@@ -225,13 +225,13 @@ export const pagesContent = {
             },
             {
                 label:"Foto",
-                time:"17:00",
+                time:"17:30",
                 icon: "camera",
                 position: "right"
             },
             {
                 label:"Cocktail",
-                time:"18:00",
+                time:"18:30",
                 icon: "cocktail",
                 position: "left"
             },
@@ -242,8 +242,8 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Party - Open bar",
-                time:"22:00",
+                label:"Open bar - Party",
+                time:"23:00",
                 icon: "party",
                 position: "left"
             },
@@ -294,13 +294,13 @@ export const pagesContent = {
             },
             {
                 label:"Photos",
-                time:"5:00pm",
+                time:"5:30pm",
                 icon: "camera",
                 position: "right"
             },
             {
                 label:"Cocktail",
-                time:"6:00pm",
+                time:"6:30pm",
                 icon: "cocktail",
                 position: "left"
             },
@@ -311,8 +311,8 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Party - Open bar",
-                time:"10:00pm",
+                label:"Open bar - Party",
+                time:"11:00pm",
                 icon: "party",
                 position: "left"
             },

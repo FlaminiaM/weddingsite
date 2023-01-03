@@ -2,6 +2,7 @@
 @import '../../../styles/_mixins';
 
 .single-column-layout{
+    background-color: $bg-primary;
     & .section-intro{
         &__background-image{
             position: relative;
