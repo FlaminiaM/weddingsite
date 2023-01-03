@@ -78,7 +78,7 @@ function TwoColumns({pages, isItalian}) {
 
   return (
     <main>
-        { true ? (
+        { imgsLoaded ? (
           <div className='two-columns-layout'>
               <div className='two-columns-layout-left'>
                   {displaySectionsLeft}

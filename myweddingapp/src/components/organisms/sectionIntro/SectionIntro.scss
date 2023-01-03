@@ -1,4 +1,6 @@
 @import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
 .section-intro{
     &__background-image{
         background-size: cover;
@@ -17,7 +19,11 @@
 
         &--full-h{
             & .overlay{
-                height: calc(var(--vh, 1vh) * 100);
+                height: calc(var(--vh, 1vh) * 85);
+
+                @include lgMinBreakPoint {
+                    height: 100vh;
+                }
             }
         }
     }
