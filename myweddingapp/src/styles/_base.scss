@@ -1,7 +1,9 @@
 @import './variables';
 
 body.no-scroll{
-	overflow: hidden;
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden
 }
 
 html, body, div, span, applet, object, iframe,
