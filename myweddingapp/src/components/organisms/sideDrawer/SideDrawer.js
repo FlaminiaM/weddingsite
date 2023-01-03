@@ -8,14 +8,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
   let elementClasses;
+  function disable() {
+    // To get the scroll position of current webpage
+    const TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    // if scroll happens, set it to the previous value
+    window.onscroll = function() {
+    window.scrollTo(LeftScroll, TopScroll);
+            };
+    }
+    
+    function enable() {
+    window.onscroll = function() {};
+    }
   if(isOpen === null){
     elementClasses = "side-drawer";
   } else if(!isOpen){
     document.querySelector("body").classList.remove("no-scroll");
     elementClasses = "side-drawer slide-out-right";
+    enable();
   } else if(isOpen){
     document.querySelector("body").classList.add("no-scroll");
     elementClasses = "side-drawer slide-in-right";
+    disable();
   }
   return (
     <>
