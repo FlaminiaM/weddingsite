@@ -120,8 +120,20 @@ function RsvpForm({attendees, handleAddAttendee, isItalian}) {
     }
   }
 
+  const resetState = () => {
+    setFormState({
+      firstname: "",
+      lastname: "",
+      dietaryrequirements: [],
+      attendance: [],
+      notes: "",
+    })
+  }
+
   const addPersonHandler = () =>{
     setFormSubmittedSucces(false);
+    resetState();
+    console.log(formState)
   }
 
   return (
@@ -144,7 +156,7 @@ function RsvpForm({attendees, handleAddAttendee, isItalian}) {
       </>
       : <>
         <Notification type="success" message={isItalian ? `Grazie per la conferma!` : `Thanks for letting us know!`} />
-        <AttendeesList attendees={attendees}/>
+        <AttendeesList attendees={attendees} isItalian = {isItalian}/>
         <h3 className='mb-xxl'>{isItalian ? "Vuoi aggiungere un'altra persona?" : 'Is someone coming with you?'}</h3> 
         <Button classes="mb-xxl" type='button' text={isItalian ? 'Aggiungi persona' : 'Add another person'} clickHandler={addPersonHandler}/>
       </>

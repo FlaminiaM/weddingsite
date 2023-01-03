@@ -210,7 +210,7 @@ export const pagesContent = {
                 linkText :"Vedi dettagli"
             },
             venue:{
-                sectionTitle:"Cerimonia", 
+                sectionTitle:"Ricevimento", 
                 venuName:"Ristorante Casa Londei",
                 venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito PU, Italy",
                 linkText :"Vedi dettagli"
