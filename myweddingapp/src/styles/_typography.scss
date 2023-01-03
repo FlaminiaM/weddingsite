@@ -28,7 +28,7 @@ h1 {
     @include smMinBreakPoint {
         font-size: toRem(76);
     }
-    @include lgMinBreakPoint {
+    @include xlMinBreakPoint {
         font-size: toRem(86); 
     }
 }

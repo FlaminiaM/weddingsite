@@ -11,6 +11,12 @@ function TwoColumns({pages, isItalian}) {
   const arrayRefs = React.useRef([]);
   const [imgsLoaded, setImgsLoaded] = React.useState(false);
 
+  const [timerLoader, setTimerLoader] = React.useState(false);
+
+  window.setTimeout(() => {
+    setTimerLoader(true);
+  }, 3000);
+
   const imagesToPreload = [];
   pages.map((page) => imagesToPreload.push(page.sectionIntro.imageUrl));
   
@@ -78,7 +84,7 @@ function TwoColumns({pages, isItalian}) {
 
   return (
     <main>
-        { imgsLoaded ? (
+        { (imgsLoaded && timerLoader) ? (
           <div className='two-columns-layout'>
               <div className='two-columns-layout-left'>
                   {displaySectionsLeft}
