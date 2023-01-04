@@ -24,7 +24,7 @@ function Menu({isItalian}) {
       <div className='menu-container-inner'>
         <ul className='menu-container-inner-list'>
           {menuItems.map((item) => (
-            <MenuItem key={item.id} text={item.text} url={item.url}/>
+            <MenuItem key={item.id} text={item.text} url={item.url} menuButtonHandler={menuButtonHandler}/>
           ))}
         </ul>
       </div>
