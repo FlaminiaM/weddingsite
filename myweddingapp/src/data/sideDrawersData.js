@@ -7,7 +7,7 @@ export const sideDrawersData = {
             title:  <TitleWithIcon type="primary" sectionTitle="Dettagli Cerimonia" icon={<Image name="church" type="png" size="medium"/>}/>,
             address: {
                 name: "Cattedrale di Santa Maria Assunta",
-                address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Italy</h4>,
+                address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Marche</h4>,
                 map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
@@ -48,26 +48,26 @@ export const sideDrawersData = {
             },
         },
         venue: {
-            title: <TitleWithIcon type="primary" sectionTitle="Venue Information" icon={<Image name="dinner" type="png" size="medium"/>}/>,
+            title: <TitleWithIcon type="primary" sectionTitle="Informazioni Ricevimento" icon={<Image name="dinner" type="png" size="medium"/>}/>,
             address: {
                 name: "Ristorante Casa Londei",
-                address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Italy</h4>,
+                address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Marche</h4>,
                 map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
-                title: "How to get here",
+                title: "Come raggiungere Casa Londei",
                 sections: [
                     {
-                        title: <TitleWithIcon type="secondary" sectionTitle="By car" icon={<Image classes="ml-xl" name="car" type="png" size="small"/>}/>,
-                        content: <p className='mt-md mb-xl'>From Urbino follow SS73bis towards Fano, take exit "St.Ippolito", then take Via Serra and Strada Provinciale 5 to Via Reforzate.</p>
+                        title: <TitleWithIcon type="secondary" sectionTitle="In auto" icon={<Image classes="ml-xl" name="car" type="png" size="small"/>}/>,
+                        content: <p className='mt-md mb-xl'>Da Urbino, seguite la SS73bis in direzione Fano, uscite a "St.Ippolito" e prendete Via Serra/Strada Provinciale 5 fino a Via Reforzate.</p>
                     },
                     {
-                        title: <TitleWithIcon type="secondary" sectionTitle="Parking info" icon={<Image classes="ml-xl" name="parking" type="png" size="xsmall"/>}/>,
-                        content: <p className='mt-md mb-xl'>Free parking available on site.</p>
+                        title: <TitleWithIcon type="secondary" sectionTitle="Parcheggio" icon={<Image classes="ml-xl" name="parking" type="png" size="xsmall"/>}/>,
+                        content: <p className='mt-md mb-xl'>Parcheggio gratuito disponibile.</p>
                     },
                     {
-                        title: <TitleWithIcon type="secondary" sectionTitle="Public transport" icon={<Image classes="ml-xl" name="bus" type="png" size="small"/>}/>,
-                        content: <p className='mt-md mb-xl'>There are no transport links to Casa Londei.</p>
+                        title: <TitleWithIcon type="secondary" sectionTitle="Trasporto pubblico" icon={<Image classes="ml-xl" name="bus" type="png" size="small"/>}/>,
+                        content: <p className='mt-md mb-xl'>Non ci sono collegamenti con mezzi pubblici per Casa Londei.</p>
                     },
                 ]
             },
