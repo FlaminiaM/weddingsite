@@ -6,6 +6,10 @@
     text-align: left;
     position: relative;
 
+    &--hide{
+        display: none;
+    }
+
     &--full-width{
         width: 99%;
     }
@@ -35,6 +39,8 @@
     }
 
     &--error{
+        margin-bottom: toRem(30);
+        
         & .input-group-label{
             color: $dark-red;
         }
@@ -50,6 +56,7 @@
 
             &__text{
                 margin-left: $m-s;
+                font-size: toRem(14);
             }
         }
     }
