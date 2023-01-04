@@ -52,33 +52,36 @@
         }
     }
 
-    &-close-icon--cross{
-        cursor: pointer;
-        position: -webkit-sticky;
+    &-close-icon--arrow{
         position: sticky;
-        top: 0.625rem;
-        right: 0;
-        text-align: right;
-        width: 100%;
-        padding-right: toRem(32);
-        padding-top: toRem(4);
-        
-        @include lgMinBreakPoint {
-            padding-top: toRem(16);
-            padding-right: toRem(64);
+        top: 50%;
+        left: 0;
+        cursor: pointer;
+        & svg{
+            transform: rotate(270deg);
+            width: toRem(30);
+            height: toRem(10);
 
-            & svg{
-                font-size: toRem(32);
+            @include lgMinBreakPoint {
+                width: toRem(66);
+                height: toRem(20);
             }
         }
     }
 
-    // &-close-btn{
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     width: 100%;
-    //     padding-bottom: toRem(16);
-    // }
+    &-close-icon--cross{
+        cursor: pointer;
+        position: absolute;
+        top: toRem(10);
+        right: toRem(18);
+    }
+
+    &-close-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: toRem(16);
+    }
 }
 

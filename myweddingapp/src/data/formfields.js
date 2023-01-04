@@ -1,7 +1,7 @@
 export const attendanceOptions = {
     italian:[
         {
-            label: "Ci sarò",
+            label: "Ci saro'",
             value: "yes"
         },
         {
@@ -111,7 +111,7 @@ export const formFieldsData = {
             }
         },
         {
-            labelText : "Allergie o esigenze alimentari",
+            labelText : "Allergie o ?",
             isMandatory : false,
             inputType : "select",
             inputName : "dietaryrequirements",
