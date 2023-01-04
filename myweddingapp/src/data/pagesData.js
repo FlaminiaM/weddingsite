@@ -257,9 +257,9 @@ export const pagesContent = {
             <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe un contributo per il nostro viaggio di nozze.</p>
         </>,
         contactUs:{
-            intro: <> <h1 className='mb-xl txt-center'>Ti aspettiamo!</h1>
+            intro: <> <h1 className='mb-xl txt-center'>Vi aspettiamo!</h1>
             <div className='txt-center'>
-                <p className='mb-xl mt-xl'>Urbino ha un posto speciale nei nostri cuori e non vediamo l'ora di condividere il nostro giorno speciale con voi in questo magico luogo!</p>
+                <p className='mb-xl mt-xl'>Urbino ha un posto unico nei nostri cuori e non vediamo l'ora di condividere il nostro giorno speciale con voi in questo magico luogo!</p>
                 <p className='mb-xl'>Per qualsiasi informazione potete contattarci via email o su WhatsApp!</p>
             </div></>,
             needHelp: <h3 className='txt-center mt-xxl'>Avete bisogno di aiuto <br/> per trovare un albergo?</h3>,
