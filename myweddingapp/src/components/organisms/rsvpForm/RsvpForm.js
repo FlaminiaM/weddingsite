@@ -13,7 +13,7 @@ import AttendeesList from '../../molecules/attendeesList/AttendeesList'
 function RsvpForm({attendees, handleAddAttendee, isItalian}) {
   const base = new airtable({apiKey: 'keyvOkFwPsBzIWG6W'}).base('appla7qDMc7scyGXp');
   const formFields = isItalian ? formFieldsData["italian"] : formFieldsData["english"];
-  const subtitle = isItalian ? "Facci sapere se potrai esserci!" : "Let us know if you can come and enjoy our special day with us!";
+  const subtitle = isItalian ? "Facci sapere se potrai esserci o meno compilando il questionario sottostante" : "Let us know if you can come and enjoy our special day with us!";
   const [isFormLoading, setIsFormLoading] = React.useState(false);
   const [formSubmittedSuccess, setFormSubmittedSucces] = React.useState(false);
   const [formErrors, setFormErrors] = React.useState({
@@ -157,7 +157,7 @@ function RsvpForm({attendees, handleAddAttendee, isItalian}) {
       : <>
         <Notification type="success" message={isItalian ? `Grazie per la conferma!` : `Thanks for letting us know!`} />
         <AttendeesList attendees={attendees} isItalian = {isItalian}/>
-        <h3 className='mb-xxl'>{isItalian ? "Vuoi aggiungere un'altra persona?" : 'Is someone coming with you?'}</h3> 
+        <h3 className='mb-xxl'>{isItalian ? "Vuoi aggiungere un'altra persona?" : 'Is anyone coming with you?'}</h3> 
         <Button classes="mb-xxl" type='button' text={isItalian ? 'Aggiungi persona' : 'Add another person'} clickHandler={addPersonHandler}/>
       </>
   )
