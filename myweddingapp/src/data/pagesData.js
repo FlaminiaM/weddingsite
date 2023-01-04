@@ -202,19 +202,19 @@ export const pagesContent = {
             <h3 className='mb-lg mt-lg'>Con gioia vi invitiamo al nostro matrimonio</h3>
             <h2 className='mb-sm mt-lg'>Sabato, 8 Luglio 2023</h2>
             <h3>ore 16:00</h3>
-            <h3 className='mb-lg mt-lg'>Duomo di Urbino (PU)</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>(PU)</h3>
             <p className='mb-xl mt-xl'>Vedi dettagli</p></>,
         locations: {
             ceremony:{
                 sectionTitle:"Cerimonia", 
                 venuName:"Cattedrale di Santa Maria Assunta",
-                venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU)",
+                venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino PU, Italy",
                 linkText :"Vedi dettagli"
             },
             venue:{
                 sectionTitle:"Ricevimento", 
                 venuName:"Ristorante Casa Londei",
-                venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito (PU)",
+                venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito PU, Italy",
                 linkText :"Vedi dettagli"
             }
         },
@@ -244,7 +244,7 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Open Bar - Party",
+                label:"Open bar - Party",
                 time:"23:00",
                 icon: "party",
                 position: "left"
@@ -253,17 +253,17 @@ export const pagesContent = {
         gifts: <>
             <h1 className='mb-xxl'>Lista nozze</h1>
             <h2 className='mb-lg'>Viaggio di nozze</h2>
-            <p className='mb-md'>Festeggiare in vostra compagnia è il regalo più bello che potremmo desiderare!</p>
-            <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe un contributo per il nostro viaggio di nozze.</p>
+            <p className='mb-md'>Festeggiare con voi e' il regalo piu' bello che potessimo desiderare!</p>
+            <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe una contribuzione per il nostro viaggio di nozze.</p>
         </>,
         contactUs:{
-            intro: <> <h1 className='mb-xl txt-center'>Vi aspettiamo!</h1>
+            intro: <> <h1 className='mb-xl txt-center'>Ti aspettiamo!</h1>
             <div className='txt-center'>
-                <p className='mb-xl mt-xl'>Urbino ha un posto unico nei nostri cuori e non vediamo l'ora di condividere il nostro giorno speciale con voi in questo magico luogo!</p>
+                <p className='mb-xl mt-xl'>Urbino ha un posto speciale nei nostri cuori e non vediamo l'ora di condividere con voi il nostro giorno speciale in questo magico paesino!</p>
                 <p className='mb-xl'>Per qualsiasi informazione potete contattarci via email o su WhatsApp!</p>
             </div></>,
-            needHelp: <h3 className='txt-center mt-xxl'>Avete bisogno di aiuto <br/> per trovare un albergo?</h3>,
-            guestInfo: "Informazioni utili"
+            needHelp: <h3 className='txt-center mt-xxl'>Hai bisogno di aiuto <br/> per trovare un albergo?</h3>,
+            guestInfo: "Informazioni per invitati"
 
             
         } 
@@ -273,20 +273,20 @@ export const pagesContent = {
             <h3 className='mb-lg mt-lg'>We are happy to invite you to our wedding</h3>
             <h2 className='mb-sm mt-lg'>Saturday, 8th July 2023</h2>
             <h3>at 4:00pm</h3>
-            <h3 className='mb-lg mt-lg'>Duomo di Urbino (Italy)</h3>
+            <h3 className='mb-lg mt-lg'>Duomo di Urbino, <br></br>Italy</h3>
             <p className='mb-xl mt-xl'>View details</p>
         </>,    
         locations: {
             ceremony: {
                 sectionTitle:"Ceremony", 
                 venuName:"Cattedrale di Santa Maria Assunta",
-                venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU) Italy",
+                venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino PU, Italy",
                 linkText :"View details"
             },
             venue:{
                 sectionTitle:"Venue", 
                 venuName:"Ristorante Casa Londei",
-                venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito (PU) Italy",
+                venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito PU, Italy",
                 linkText :"View details"
             }
         },
@@ -316,7 +316,7 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Open Bar - Party",
+                label:"Open bar - Party",
                 time:"11:00pm",
                 icon: "party",
                 position: "left"
@@ -332,7 +332,7 @@ export const pagesContent = {
                 <p className='mb-xl mt-xl'>Urbino has a special place in our hearts and we cannot wait to celebrate our special day in this wonderful city with you!</p>
                 <p className='mb-xl'>Should you need anything don’t hesitate to get in touch with us via email or via WhatsApp!</p>
             </div></>,
-            needHelp: <h3 className='txt-center mt-xxl'>Need help finding <br/> an accomodation?</h3>,
+            needHelp: <h3 className='txt-center mt-xxl'>Need help finding an <br/> an accomodation?</h3>,
             guestInfo: "Guests information"
  
         }

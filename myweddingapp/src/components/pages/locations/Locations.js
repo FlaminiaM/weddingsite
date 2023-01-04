@@ -25,7 +25,7 @@ function Locations({isItalian}) {
           venuName = {content.ceremony.venuName} 
           venueAddress= {content.ceremony.venueAddress} 
           linkText = {content.ceremony.linkText} 
-          insideDrawerComponent={<LocationInfo isItalian = {isItalian} locationType="ceremony"/>}
+          insideDrawerComponent={<LocationInfo locationType="ceremony"/>}
           />
         <Line type="divider" orientation="horizontal" />
         <LocationDetails 
@@ -34,7 +34,7 @@ function Locations({isItalian}) {
           venuName = {content.venue.venuName} 
           venueAddress= {content.venue.venueAddress} 
           linkText = {content.venue.linkText} 
-          insideDrawerComponent={<LocationInfo isItalian = {isItalian} locationType="venue"/>}
+          insideDrawerComponent={<LocationInfo locationType="venue"/>}
           />
            {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66}  height={20} animation="bounce"/>  : null} 
       </div>
