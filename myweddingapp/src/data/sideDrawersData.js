@@ -37,7 +37,7 @@ export const sideDrawersData = {
                             <p className='mt-xl mb-lg'>Parcheggi gratuiti: situati fuori dalle mura, preparatevi ad affrontare discese e salite molto ripide per raggiungere il centro storico!</p>
                             <p><a rel="noreferrer" target="_blank" href='https://goo.gl/maps/ecGuhr4c9cJu4Kiq5'>Piazzale Del Popolo</a></p>
                             <p className='mb-xl mt-md'><a rel="noreferrer" target="_blank" href='https://goo.gl/maps/opY9sjbprV3FUFD6A'>Fortezza Albornoz - Parco Della Resistenza</a></p>
-                            <p className='mb-xl mt-md'>Clicca <a rel="noreferrer" target="_blank" href='http://www.urbinoservizi.it/wp-content/uploads/2016/02/pianta-festa-duca.jpg'>qui</a>per la mappa dei parcheggi</p>
+                            <p className='mb-xl mt-md'>Clicca <a rel="noreferrer" target="_blank" href='http://www.urbinoservizi.it/wp-content/uploads/2016/02/pianta-festa-duca.jpg'>qui</a> per la mappa dei parcheggi</p>
                         </div>
                     },
                     {
