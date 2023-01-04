@@ -27,7 +27,7 @@
         }
         &-vertical{
             width: toRem(3);
-            height: toRem(350);
+            height: 70%;
             @include mdMinBreakPoint {
                 height: toRem(550);
             }

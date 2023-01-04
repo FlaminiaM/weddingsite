@@ -244,7 +244,7 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Open Bar - Party",
+                label:"Party - <br/>Open Bar",
                 time:"23:00",
                 icon: "party",
                 position: "left"
@@ -292,7 +292,7 @@ export const pagesContent = {
         },
         timeline:[
             {
-                label:"Wedding Ceremony",
+                label:"Wedding <br/> Ceremony",
                 time:"4:00pm",
                 icon: "church",
                 position: "left"
@@ -316,7 +316,7 @@ export const pagesContent = {
                 position: "right"
             },
             {
-                label:"Open Bar - Party",
+                label:"Party - <br/>Open Bar",
                 time:"11:00pm",
                 icon: "party",
                 position: "left"

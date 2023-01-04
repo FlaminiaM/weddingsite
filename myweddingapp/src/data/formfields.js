@@ -135,7 +135,7 @@ export const formFieldsData = {
             inputName : "firstname",
             isFullWidth:false,
             errorMessages: {
-                empty: "Please fill this in"
+                empty: "Required field"
             }
         },
         {
@@ -145,7 +145,7 @@ export const formFieldsData = {
             inputName : "lastname",
             isFullWidth:false,
             errorMessages: {
-                empty: "Please fill this in"
+                empty: "Required field"
             }
         },
         {
@@ -157,7 +157,7 @@ export const formFieldsData = {
             isMulti:false,
             options: attendanceOptions.english,
             errorMessages: {
-                empty: "Please fill this in"
+                empty: "Required field"
             }
         },
         {

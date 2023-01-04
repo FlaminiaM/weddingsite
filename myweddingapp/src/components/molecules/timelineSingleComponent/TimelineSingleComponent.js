@@ -10,7 +10,7 @@ function TimelineSingleComponent({icon, label, time, position, elementNumber}) {
             {icon}
          </div>
         <div className='timeline-single-component-body-right'>
-            <span className="timeline-single-component-body-right-label ">{label.split("<br/>").join("\n")}</span>
+            <span className="timeline-single-component-body-right-label new-line">{label.split("<br/>").join("\n")}</span>
             <span className="timeline-single-component-body-right-time ">{time}</span>
             <Line type="timeline" orientation="horizontal" />
         </div>
