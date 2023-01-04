@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './MenuContainer.scss';
-import {menueItemsData} from '../../../data/menu';
+import {menuItemsData} from '../../../data/menu';
 import MenuItem from '../../atoms/menuItem/MenuItem';
 
-function Menu() {
-  const fetchMenuItems = () => menueItemsData;
-  const [menuItems, setMenuItems] = useState([]);
+function Menu({isItalian}) {
+  const menuItems = isItalian ? menuItemsData["italian"] : menuItemsData["english"];
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const menuItems = fetchMenuItems();
-    console.log("menuItems", menuItems)
-    setMenuItems(menuItems);
-  }, []);
 
   const menuButtonHandler = () => {
     setIsOpen(!isOpen);

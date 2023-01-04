@@ -20,6 +20,7 @@ function Gifts({isItalian}) {
             <div>
               <p>IBAN: GB51 REVO 0099 7075 8478 23</p>
               <p>BIC: REVOGB21</p>
+              <p>Intestatario: Marco Crociani</p>
             </div>
           </div>
           <Line classes='mt-md mb-md' type='divider' orientation="horizontal" />
@@ -28,6 +29,7 @@ function Gifts({isItalian}) {
             <div>
               <p>Sort Code: 04-00-75</p>
               <p>Account Number: 13065815</p>
+              <p>Account Holder: Marco Crociani</p>
             </div>
           </div>
         </div>
