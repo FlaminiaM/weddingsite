@@ -13,7 +13,7 @@ function Home({isItalian}) {
   const content = isItalian ? pagesContent["italian"]["home"] : pagesContent["english"]["home"] ;
   return (
     <PageContainer pageName="homepage">
-      <MenuContainer isItalian={isItalian}/>
+      <MenuContainer />
       <SwitchLanguage />
       <div className='homepage txt-center'>
         <Image classes="mb-xl" name="us" type="png" size="large"/>
