@@ -5,6 +5,13 @@ import Gifts from "../components/pages/gifts/Gifts";
 import Rsvp from "../components/pages/rsvp/Rsvp";
 import ContactUs from "../components/pages/contactUs/ContactUs";
 
+import home from '../assets/images/home.jpg';
+import locations from '../assets/images/locations.jpg';
+import timeline from '../assets/images/timeline.jpg';
+import gifts from '../assets/images/gifts.jpg';
+import rsvp from '../assets/images/rsvp.jpg';
+import urbino from '../assets/images/urbino.jpg';
+
 export const pages = 
 {
     italian: [
@@ -16,8 +23,7 @@ export const pages =
                 title: "Marco & Flaminia",
                 subtitle: "Non vediamo l'ora di condividere <br/> il nostro giorno speciale con voi",
                 pageTitleTextColor: 'white',
-                // gif: Airplane,
-                imageUrl: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/home_qadol9_yp9mfd.jpg',
+                imageUrl: home
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -32,7 +38,7 @@ export const pages =
                 title: "Save the date",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/IMG-20220617-WA0013_swbasa_t9jnhm.jpg"
+                imageUrl: locations,
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -47,7 +53,7 @@ export const pages =
                 title: "The wedding",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/timeline_mytswh_d4ff8h.jpg"
+                imageUrl: timeline
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -62,7 +68,7 @@ export const pages =
                 title: "To our next adventure...",
                 subtitle: "",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/gift_ove5ti_dkmqe5.jpg"
+                imageUrl: gifts
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -77,7 +83,7 @@ export const pages =
                 title: "We'd love to have <br/> you with us!",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/rsvp_wybdkf_l0paoc.jpg"
+                imageUrl: rsvp,
             }, 
             sectionContent: {
                 showDesktopOnly: false,
@@ -92,7 +98,7 @@ export const pages =
                 title: "Urbino",
                 subtitle: "Sabato 8 Luglio 2023",
                 pageTitleTextColor: 'white',
-                imageUrl: "https://res.cloudinary.com/de2x5mgq7/image/upload/v1672751907/urbino_twlusw_ujwsre.jpg"
+                imageUrl: urbino,
             }, 
             sectionContent: {
                 showDesktopOnly: false,

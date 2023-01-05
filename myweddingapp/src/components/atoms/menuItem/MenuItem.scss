@@ -13,6 +13,7 @@
         padding: 0 toRem(40);
         text-decoration: none;
         color: $black;
+        font-weight: 300;
         &--active{
             background-color: $light-gray;
         }

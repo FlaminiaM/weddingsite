@@ -13,7 +13,7 @@ import AttendeesList from '../../molecules/attendeesList/AttendeesList'
 function RsvpForm({attendees, handleAddAttendee, isItalian}) {
   const base = new airtable({apiKey: 'keyvOkFwPsBzIWG6W'}).base('appla7qDMc7scyGXp');
   const formFields = isItalian ? formFieldsData["italian"] : formFieldsData["english"];
-  const subtitle = isItalian ? "Fateci sapere se potrete esserci o meno compilando il questionario sottostante entro il 31 Marzo 2023" : "Let us know if you can come and enjoy our special day with us by the 31st March 2023";
+  const subtitle = isItalian ? "Fateci sapere se ci sarete compilando il questionario sottostante entro il 31 Marzo 2023" : "Let us know if you can come and enjoy our special day with us by the 31st March 2023";
   const [isFormLoading, setIsFormLoading] = React.useState(false);
   const [formSubmittedSuccess, setFormSubmittedSucces] = React.useState(false);
   const [showDietaryReq, setShowDietaryReq] = React.useState(false);
