@@ -120,7 +120,7 @@ export const formFieldsData = {
             options: dietaryRequirementsOptions.italian
         },
         {
-            labelText : "Note",
+            labelText : "Altro da comunicarci?",
             isMandatory : false,
             inputType : "textarea",
             inputName : "notes",

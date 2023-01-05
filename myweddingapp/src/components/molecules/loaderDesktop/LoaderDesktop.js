@@ -5,6 +5,10 @@ import us from '../../../assets/images/us.png'
 import worldbg from '../../../assets/images/world-bg.png'
 
 function LoaderDesktop() {
+
+  var img=new Image();
+  img.src= worldbg;
+
   return (
     <div className='loader loader--flex'>
         <div className='loader-wrapper loader--flex'>

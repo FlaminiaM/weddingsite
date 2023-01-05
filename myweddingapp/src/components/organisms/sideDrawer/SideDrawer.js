@@ -27,8 +27,8 @@ function SideDrawer({isOpen, handleDrawerState, drawerContent}) {
         <div className='side-drawer-background' onClick={(e)=> handleClickBackground(e)}>
           <div className='side-drawer-container'>
               <div className='side-drawer-wrapper'>
-                <span className='side-drawer-close-icon side-drawer-close-icon--cross' onClick={()=> handleDrawerState()}><FontAwesomeIcon icon={faTimes} /></span>
                 <div className='side-drawer-sections'>
+                <span className='side-drawer-close-icon side-drawer-close-icon--cross' onClick={()=> handleDrawerState()}><FontAwesomeIcon icon={faTimes} /></span>
                   {drawerContent}
                 </div>
                 {/* <div className='side-drawer-close-btn'><Button type='primary' text='Close' clickHandler={handleDrawerState}/></div> */}
