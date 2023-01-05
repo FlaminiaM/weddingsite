@@ -50,7 +50,7 @@ export const sideDrawersData = {
             },
         },
         venue: {
-            title: <TitleWithIcon type="primary" sectionTitle="Informazioni Ricevimento" icon={<Image name="dinner" type="png" size="medium"/>}/>,
+            title: <TitleWithIcon type="primary" sectionTitle="Dettagli Ricevimento" icon={<Image name="dinner" type="png" size="medium"/>}/>,
             address: {
                 name: "Ristorante Casa Londei",
                 address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Marche</h4>,
@@ -77,14 +77,71 @@ export const sideDrawersData = {
             },
         },
         accomodation: {
-            title: <TitleWithIcon type="primary" sectionTitle="Informazioni utili" icon={<Image name="dinner" type="png" size="medium"/>}/>,
-            subtitle: <p>Abbiamo selezionato alcuni alberghi per voi</p>,
+            title: <TitleWithIcon type="primary" sectionTitle="Strutture ricettive" icon={<Image name="sleep" type="png" size="medium"/>}/>,
+            subtitle: <p className='mt-lg mb-lg'>Abbiamo selezionato alcuni alberghi per voi</p>,
             options: [
                 {
-                    name: 'Albergo 1',
-                    link: 'link'
-                }
-            ]
+                    name: 'Tag Hotel',
+                    city: 'Fano',
+                    link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Le Fontanelle Country House',
+                    city: "Sant'Ippolito (PU)",
+                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Albergo La Palomba',
+                    city: "Mondavio (PU)",
+                    link: 'https://maps.app.goo.gl/7v7aMRjnUKwMAQFr5',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Hotel Giardino',
+                    city: "San Lorenzo in Campo (PU)",
+                    link: 'https://maps.app.goo.gl/UJVw3HyGDHwRJE1e7',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Villa del Cuoco',
+                    city: "Fossombrone (PU)",
+                    link: 'https://maps.app.goo.gl/NDCP4q1DdaKdrBWWA',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Il Cavallino',
+                    city: "Fossombrone (PU)",
+                    link: 'https://goo.gl/maps/5N96YPBwiL8f5RDe8',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Albergo Italia',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/EAuUYFrMLKKxpw3V6',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Hotel San Domenico',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/PTuAu2aWPppnquK68',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Valle del Metauro Country House',
+                    city: "Montemaggiore al Metauro (PU)",
+                    link: 'https://goo.gl/maps/Tv5DsnZLa8drAQww5',
+                    linkText: 'Scopri di più'
+                },
+            ],
+            footer: <>
+                <p>Per ulteriori opzioni vi consigliamo di visitare: </p>
+                <ul>
+                    <li className='mt-md'><a href='https://www.booking.com/index.it.html'>Booking.com</a></li>
+                    <li className='mt-md'><a href='https://www.tripadvisor.it/'>Trip Advisor</a></li>
+                </ul>
+            </>
         }
     },
     english: {
@@ -161,6 +218,73 @@ export const sideDrawersData = {
                     },
                 ]
             }
+        },
+        accomodation: {
+            title: <TitleWithIcon type="primary" sectionTitle="Accomodations" icon={<Image name="sleep" type="png" size="medium"/>}/>,
+            subtitle: <p className='mt-lg mb-lg'>We have selected a couple of hotels and B&B for you.</p>,
+            options: [
+                {
+                    name: 'Tag Hotel',
+                    city: 'Fano',
+                    link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Le Fontanelle Country House',
+                    city: "Sant'Ippolito (PU)",
+                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Albergo La Palomba',
+                    city: "Mondavio (PU)",
+                    link: 'https://maps.app.goo.gl/7v7aMRjnUKwMAQFr5',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Hotel Giardino',
+                    city: "San Lorenzo in Campo (PU)",
+                    link: 'https://maps.app.goo.gl/UJVw3HyGDHwRJE1e7',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Villa del Cuoco',
+                    city: "Fossombrone (PU)",
+                    link: 'https://maps.app.goo.gl/NDCP4q1DdaKdrBWWA',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Il Cavallino',
+                    city: "Fossombrone (PU)",
+                    link: 'https://goo.gl/maps/5N96YPBwiL8f5RDe8',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Albergo Italia',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/EAuUYFrMLKKxpw3V6',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Hotel San Domenico',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/PTuAu2aWPppnquK68',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Valle del Metauro Country House',
+                    city: "Montemaggiore al Metauro (PU)",
+                    link: 'https://goo.gl/maps/Tv5DsnZLa8drAQww5',
+                    linkText: 'Find out more'
+                },
+            ],
+            footer: <>
+                <p>More options can be found using:</p>
+                <ul>
+                    <li className='mt-md'><a href='https://www.booking.com/index.en-gb.html'>Booking.com</a></li>
+                    <li className='mt-md'><a href='https://www.tripadvisor.com/'>Trip Advisor</a></li>
+                </ul>
+            </>
         }
     }
 }

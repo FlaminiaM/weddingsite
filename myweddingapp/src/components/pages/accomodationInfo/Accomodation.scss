@@ -1,0 +1,33 @@
+@import '../../../styles/_variables';
+@import '../../../styles/_mixins';
+
+.accomodation{
+    text-align: center;
+    &-options{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 950px;
+    }
+
+    &-option{
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 5px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        margin: 8px;
+        justify-content: space-between;
+
+        &-findmore{
+            font-family: "Cormorant", serif;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: toRem(16);
+        }
+    }
+}

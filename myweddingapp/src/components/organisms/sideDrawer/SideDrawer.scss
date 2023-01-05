@@ -37,7 +37,7 @@
         align-items: center;
         background-color: #fff;
         // padding: 0 1rem 1rem;
-        border-radius: 0.1875rem;
+        border-radius: toRem(10);
         max-height: 100%;
         width: 100%;
         overflow-y: scroll;
