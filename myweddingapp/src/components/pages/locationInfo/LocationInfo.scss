@@ -15,6 +15,14 @@
             font-weight: bold;
         }
 
+        &-wrapper{
+            @include lgMinBreakPoint {
+                max-width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
         &-section{
             & .title-with-icon{
                 & h2{

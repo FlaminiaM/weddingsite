@@ -27,10 +27,10 @@
         }
         &-vertical{
             width: toRem(3);
-            height: 70%;
-            @include mdMinBreakPoint {
-                height: toRem(550);
-            }
+            height: 74%;
+            // @include mdMinBreakPoint {
+            //     height: toRem(550);
+            // }
         }
     }
 }
