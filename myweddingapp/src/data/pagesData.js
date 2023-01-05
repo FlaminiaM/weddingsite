@@ -202,19 +202,21 @@ export const pagesContent = {
             <h3 className='mb-lg mt-lg'>Con gioia vi invitiamo al nostro matrimonio</h3>
             <h2 className='mb-sm mt-lg'>Sabato, 8 Luglio 2023</h2>
             <h3>ore 16:00</h3>
-            <h3 className='mb-lg mt-lg'>Duomo di Urbino (PU)</h3>
-            <p className='mb-xl mt-xl'>Vedi dettagli</p></>,
+            <h3 className='mb-xxl mt-lg'>Cattedrale di Santa Maria Assunta <br/> Urbino (PU)</h3>
+            </>,
         locations: {
             ceremony:{
                 sectionTitle:"Cerimonia", 
                 venuName:"Cattedrale di Santa Maria Assunta",
                 venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU)",
+                time: 'ore 16:00',
                 linkText :"Vedi dettagli"
             },
             venue:{
                 sectionTitle:"Ricevimento", 
                 venuName:"Ristorante Casa Londei",
                 venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito (PU)",
+                time: 'ore 18:30',
                 linkText :"Vedi dettagli"
             }
         },
@@ -254,7 +256,7 @@ export const pagesContent = {
             <h1 className='mb-xxl'>Lista nozze</h1>
             <h2 className='mb-lg'>Viaggio di nozze</h2>
             <p className='mb-md'>Festeggiare in vostra compagnia è il regalo più bello che potremmo desiderare!</p>
-            <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe un contributo per il nostro viaggio di nozze.</p>
+            <p className='mb-lg'>Se volete sorprenderci con un regalo, il nostro desiderio sarebbe un contributo per il viaggio di nozze.</p>
         </>,
         contactUs:{
             intro: <> <h1 className='mb-xl txt-center'>Vi aspettiamo!</h1>
@@ -273,19 +275,20 @@ export const pagesContent = {
             <h3 className='mb-lg mt-lg'>We are happy to invite you to our wedding</h3>
             <h2 className='mb-sm mt-lg'>Saturday, 8th July 2023</h2>
             <h3>at 4:00pm</h3>
-            <h3 className='mb-lg mt-lg'>Duomo di Urbino (Italy)</h3>
-            <p className='mb-xl mt-xl'>View details</p>
+            <h3 className='mb-xxl mt-lg'>Cattedrale di Santa Maria Assunta <br/> Urbino (Italy)</h3>
         </>,    
         locations: {
             ceremony: {
                 sectionTitle:"Ceremony", 
                 venuName:"Cattedrale di Santa Maria Assunta",
                 venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU) Italy",
+                time: 'at 4:00pm',
                 linkText :"View details"
             },
             venue:{
                 sectionTitle:"Venue", 
                 venuName:"Ristorante Casa Londei",
+                time: 'at 6:30pm',
                 venueAddress:"Via Reforzate, 43, 61040 <br/> Sant'Ippolito (PU) Italy",
                 linkText :"View details"
             }
@@ -333,7 +336,7 @@ export const pagesContent = {
                 <p className='mb-xl'>Should you need anything don’t hesitate to get in touch with us via email or via WhatsApp!</p>
             </div></>,
             needHelp: <h3 className='txt-center mt-xxl'>Need help finding <br/> an accomodation?</h3>,
-            guestInfo: "Guests information"
+            guestInfo: "Guests info"
  
         }
     }

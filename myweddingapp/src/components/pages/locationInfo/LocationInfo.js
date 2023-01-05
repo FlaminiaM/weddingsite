@@ -8,6 +8,7 @@ import { sideDrawersData } from '../../../data/sideDrawersData';
 
 function LocationInfo({locationType, isItalian}) {
   const content = isItalian ? sideDrawersData["italian"][locationType] : sideDrawersData["english"][locationType];
+  console.log(content)
   return (
     <div className='location-info'>
         {content.title}
@@ -17,7 +18,7 @@ function LocationInfo({locationType, isItalian}) {
                 <h2>{content.address.name}</h2>
                 {content.address.address}
             </div>
-            <div id="location-info-address-map">{content.address.map}</div>
+            <a href={content.address.mapLink}><div id="location-info-address-map" style={{backgroundImage: `url(${content.address.map})`}}></div></a>
             <Line classes='mt-xxl mb-xl' type='divider' orientation="horizontal" />
           </div>
 

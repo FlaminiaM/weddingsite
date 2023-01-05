@@ -22,7 +22,9 @@
                 }
             }
             &-content{
-                max-width: 80%;
+                @include lgMinBreakPoint {
+                    max-width: 80%;
+                }
                 margin: 0 auto;
 
                 & .paid-parking-info a{
@@ -34,12 +36,15 @@
 }
 
 #location-info-address-map{
-    height: 300px;
+    height: 200px;
     width: 300px;
     margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    & iframe{
-        height: 100%;
-        width: 100%;
+    @include lgMinBreakPoint {
+        height: 300px;
+        width: auto;
     }
 }

@@ -1,6 +1,6 @@
 import TitleWithIcon from '../components/molecules/titleWithIcon/TitleWithIcon';
 import Image from '../components/atoms/image/Image';
-
+import ceremonyMap from '../assets/images/ceremony_map.png';
 export const sideDrawersData = {
     italian: {
         ceremony:{
@@ -8,7 +8,9 @@ export const sideDrawersData = {
             address: {
                 name: "Cattedrale di Santa Maria Assunta",
                 address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Marche</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907866/ceremony_jbmgsl.png',
+                mapLink: 'https://goo.gl/maps/bPn5uL7BhtGyoiBB6'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "Come raggiungere Urbino",
@@ -48,11 +50,13 @@ export const sideDrawersData = {
             },
         },
         venue: {
-            title: <TitleWithIcon type="primary" sectionTitle="Informazioni Ricevimento" icon={<Image name="dinner" type="png" size="medium"/>}/>,
+            title: <TitleWithIcon type="primary" sectionTitle="Dettagli Ricevimento" icon={<Image name="dinner" type="png" size="medium"/>}/>,
             address: {
                 name: "Ristorante Casa Londei",
                 address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Marche</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907867/venue_uclg8a.png',
+                mapLink: 'https://goo.gl/maps/kLMtxgSd1hiTxyvVA'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "Come raggiungere Casa Londei",
@@ -73,14 +77,71 @@ export const sideDrawersData = {
             },
         },
         accomodation: {
-            title: <TitleWithIcon type="primary" sectionTitle="Informazioni utili" icon={<Image name="dinner" type="png" size="medium"/>}/>,
-            subtitle: <p>Abbiamo selezionato alcuni alberghi per voi</p>,
+            title: <TitleWithIcon type="primary" sectionTitle="Strutture ricettive" icon={<Image name="sleep" type="png" size="medium"/>}/>,
+            subtitle: <p className='mt-lg mb-lg'>Abbiamo selezionato alcuni alberghi per voi</p>,
             options: [
                 {
-                    name: 'Albergo 1',
-                    link: 'link'
-                }
-            ]
+                    name: 'Tag Hotel',
+                    city: 'Fano',
+                    link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Le Fontanelle Country House',
+                    city: "Sant'Ippolito (PU)",
+                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Albergo La Palomba',
+                    city: "Mondavio (PU)",
+                    link: 'https://maps.app.goo.gl/7v7aMRjnUKwMAQFr5',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Hotel Giardino',
+                    city: "San Lorenzo in Campo (PU)",
+                    link: 'https://maps.app.goo.gl/UJVw3HyGDHwRJE1e7',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Villa del Cuoco',
+                    city: "Fossombrone (PU)",
+                    link: 'https://maps.app.goo.gl/NDCP4q1DdaKdrBWWA',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Il Cavallino',
+                    city: "Fossombrone (PU)",
+                    link: 'https://goo.gl/maps/5N96YPBwiL8f5RDe8',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Albergo Italia',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/EAuUYFrMLKKxpw3V6',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Hotel San Domenico',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/PTuAu2aWPppnquK68',
+                    linkText: 'Scopri di più'
+                },
+                {
+                    name: 'Valle del Metauro Country House',
+                    city: "Montemaggiore al Metauro (PU)",
+                    link: 'https://goo.gl/maps/Tv5DsnZLa8drAQww5',
+                    linkText: 'Scopri di più'
+                },
+            ],
+            footer: <>
+                <p>Per ulteriori opzioni vi consigliamo di visitare: </p>
+                <ul>
+                    <li className='mt-md'><a href='https://www.booking.com/index.it.html'>Booking.com</a></li>
+                    <li className='mt-md'><a href='https://www.tripadvisor.it/'>Trip Advisor</a></li>
+                </ul>
+            </>
         }
     },
     english: {
@@ -89,7 +150,9 @@ export const sideDrawersData = {
             address: {
                 name: "Cattedrale di Santa Maria Assunta",
                 address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Italy</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907866/ceremony_jbmgsl.png',
+                mapLink: 'https://goo.gl/maps/bPn5uL7BhtGyoiBB6'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "How to get here",
@@ -133,7 +196,10 @@ export const sideDrawersData = {
             address: {
                 name: "Ristorante Casa Londei",
                 address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Italy</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907867/venue_uclg8a.png',
+                mapLink: 'https://goo.gl/maps/kLMtxgSd1hiTxyvVA'
+
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "How to get here",
@@ -152,6 +218,73 @@ export const sideDrawersData = {
                     },
                 ]
             }
+        },
+        accomodation: {
+            title: <TitleWithIcon type="primary" sectionTitle="Accomodations" icon={<Image name="sleep" type="png" size="medium"/>}/>,
+            subtitle: <p className='mt-lg mb-lg'>We have selected a couple of hotels and B&B for you.</p>,
+            options: [
+                {
+                    name: 'Tag Hotel',
+                    city: 'Fano',
+                    link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Le Fontanelle Country House',
+                    city: "Sant'Ippolito (PU)",
+                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Albergo La Palomba',
+                    city: "Mondavio (PU)",
+                    link: 'https://maps.app.goo.gl/7v7aMRjnUKwMAQFr5',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Hotel Giardino',
+                    city: "San Lorenzo in Campo (PU)",
+                    link: 'https://maps.app.goo.gl/UJVw3HyGDHwRJE1e7',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Villa del Cuoco',
+                    city: "Fossombrone (PU)",
+                    link: 'https://maps.app.goo.gl/NDCP4q1DdaKdrBWWA',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Il Cavallino',
+                    city: "Fossombrone (PU)",
+                    link: 'https://goo.gl/maps/5N96YPBwiL8f5RDe8',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Albergo Italia',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/EAuUYFrMLKKxpw3V6',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Hotel San Domenico',
+                    city: "Urbino (PU)",
+                    link: 'https://goo.gl/maps/PTuAu2aWPppnquK68',
+                    linkText: 'Find out more'
+                },
+                {
+                    name: 'Valle del Metauro Country House',
+                    city: "Montemaggiore al Metauro (PU)",
+                    link: 'https://goo.gl/maps/Tv5DsnZLa8drAQww5',
+                    linkText: 'Find out more'
+                },
+            ],
+            footer: <>
+                <p>More options can be found using:</p>
+                <ul>
+                    <li className='mt-md'><a href='https://www.booking.com/index.en-gb.html'>Booking.com</a></li>
+                    <li className='mt-md'><a href='https://www.tripadvisor.com/'>Trip Advisor</a></li>
+                </ul>
+            </>
         }
     }
 }

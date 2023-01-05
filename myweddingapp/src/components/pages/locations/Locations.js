@@ -8,7 +8,6 @@ import LocationDetails from '../../organisms/locationDetails/LocationDetails';
 import Image from '../../atoms/image/Image';
 import Icon from '../../atoms/icon/Icon';
 import LocationInfo from '../../pages/locationInfo/LocationInfo';
-import VenueInfo from '../../pages/venueInfo/VenueInfo';
 import Line from '../../atoms/line/Line';
 
 
@@ -25,6 +24,7 @@ function Locations({isItalian}) {
           venuName = {content.ceremony.venuName} 
           venueAddress= {content.ceremony.venueAddress} 
           linkText = {content.ceremony.linkText} 
+          time={content.ceremony.time}
           insideDrawerComponent={<LocationInfo isItalian = {isItalian} locationType="ceremony"/>}
           />
         <Line type="divider" orientation="horizontal" />
@@ -34,9 +34,10 @@ function Locations({isItalian}) {
           venuName = {content.venue.venuName} 
           venueAddress= {content.venue.venueAddress} 
           linkText = {content.venue.linkText} 
+          time={content.venue.time}
           insideDrawerComponent={<LocationInfo isItalian = {isItalian} locationType="venue"/>}
           />
-           {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66}  height={20} animation="bounce"/>  : null} 
+           {/* {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66}  height={20} animation="bounce"/>  : null}  */}
       </div>
     </PageContainer>
   )
