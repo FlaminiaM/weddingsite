@@ -14,7 +14,7 @@ function Timeline({isItalian}) {
     <PageContainer pageName="timeline">
         <h1 className='txt-center'>{title}</h1>
         <TimelineComponent content = {content}/>
-        {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66} height={20}  animation="bounce"/>  : null}
+        {/* {window.innerWidth > 992 ? <Icon classes="mt-xxl" name="arrow-down" width={66} height={20}  animation="bounce"/>  : null} */}
     </PageContainer>
   )
 }

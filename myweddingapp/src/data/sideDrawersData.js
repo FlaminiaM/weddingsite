@@ -1,6 +1,6 @@
 import TitleWithIcon from '../components/molecules/titleWithIcon/TitleWithIcon';
 import Image from '../components/atoms/image/Image';
-
+import ceremonyMap from '../assets/images/ceremony_map.png';
 export const sideDrawersData = {
     italian: {
         ceremony:{
@@ -8,7 +8,9 @@ export const sideDrawersData = {
             address: {
                 name: "Cattedrale di Santa Maria Assunta",
                 address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Marche</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907866/ceremony_jbmgsl.png',
+                mapLink: 'https://goo.gl/maps/bPn5uL7BhtGyoiBB6'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "Come raggiungere Urbino",
@@ -52,7 +54,9 @@ export const sideDrawersData = {
             address: {
                 name: "Ristorante Casa Londei",
                 address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Marche</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907867/venue_uclg8a.png',
+                mapLink: 'https://goo.gl/maps/kLMtxgSd1hiTxyvVA'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "Come raggiungere Casa Londei",
@@ -79,7 +83,9 @@ export const sideDrawersData = {
             address: {
                 name: "Cattedrale di Santa Maria Assunta",
                 address: <h4>Via Puccinotti, 29, 61029 <br />Urbino (PU) Italy</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907866/ceremony_jbmgsl.png',
+                mapLink: 'https://goo.gl/maps/bPn5uL7BhtGyoiBB6'
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4311.956096167932!2d12.633964438990498!3d43.72526038140902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf83a653fc62f%3A0xc2281fe7252d237f!2sCattedrale%20di%20Santa%20Maria%20Assunta!5e0!3m2!1sen!2suk!4v1668612734473!5m2!1sen!2suk" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "How to get here",
@@ -123,7 +129,10 @@ export const sideDrawersData = {
             address: {
                 name: "Ristorante Casa Londei",
                 address: <h4>Via Reforzate, 43, 61040 <br />Sant'Ippolito (PU) Italy</h4>,
-                map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
+                map: 'https://res.cloudinary.com/de2x5mgq7/image/upload/v1672907867/venue_uclg8a.png',
+                mapLink: 'https://goo.gl/maps/kLMtxgSd1hiTxyvVA'
+
+                // map: <iframe title='ceremonyMap' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.599731614304!2d12.8750038!3d43.6658515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd24043ec68b942d5!2sRistorante%20Casa%20Londei!5e0!3m2!1sen!2sit!4v1672827067955!5m2!1sen!2sit" allowFullScreen=""  referrerPolicy="no-referrer-when-downgrade"></iframe>
             },
             directions: {
                 title: "How to get here",

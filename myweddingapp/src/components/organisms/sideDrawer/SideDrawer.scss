@@ -45,6 +45,8 @@
 
 
     &-sections{
+        padding-left: toRem(16);
+        padding-right: toRem(16);
         @include lgMinBreakPoint {
             padding-left: toRem(18);
             padding-right: toRem(18);
