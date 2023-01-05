@@ -4,8 +4,9 @@ import './ContactUs.scss';
 import PageContainer from '../../layout/pageContainer/PageContainer';
 import Line from '../../atoms/line/Line';
 import Image from '../../atoms/image/Image';
-import {handleDrawerState} from '../../../redux/actions/drawerActions';
+import {handleDrawerState, setDrawerContent} from '../../../redux/actions/drawerActions';
 import { connect } from 'react-redux';
+import Accomodation from '../accomodationInfo/AccomodationInfo';
 
 import { pagesContent } from '../../../data/pagesData';
 
@@ -15,6 +16,11 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function ContactUs(props) {
     const content = props.isItalian ? pagesContent["italian"]["contactUs"] : pagesContent["english"]["contactUs"] ;
+    const handleLinkClickEvent = (e) =>{
+        e.preventDefault();
+        props.handleDrawerState();
+        props.setDrawerContent(<Accomodation isItalian={props.isItalian} />);
+      }
   return (
     <PageContainer pageName="ContactUs">
         <div className='contactUs'>
@@ -41,11 +47,11 @@ function ContactUs(props) {
                     size = "large" 
                     type ="png"
                 />
-                <h4 onClick={()=> props.handleDrawerState()}>{content.guestInfo}</h4>
+                <h4 onClick={(e)=> handleLinkClickEvent(e)}>{content.guestInfo}</h4>
             </div>
         </div>
     </PageContainer>
   )
 }
 
-export default connect(null, { handleDrawerState })(ContactUs);
+export default connect(null, { handleDrawerState, setDrawerContent })(ContactUs);
