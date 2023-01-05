@@ -75,6 +75,16 @@ export const sideDrawersData = {
                     },
                 ]
             },
+        },
+        accomodation: {
+            title: <TitleWithIcon type="primary" sectionTitle="Informazioni utili" icon={<Image name="dinner" type="png" size="medium"/>}/>,
+            subtitle: <p>Abbiamo selezionato alcuni alberghi per voi</p>,
+            options: [
+                {
+                    name: 'Albergo 1',
+                    link: 'link'
+                }
+            ]
         }
     },
     english: {
