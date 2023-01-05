@@ -336,7 +336,7 @@ export const pagesContent = {
                 <p className='mb-xl'>Should you need anything don’t hesitate to get in touch with us via email or via WhatsApp!</p>
             </div></>,
             needHelp: <h3 className='txt-center mt-xxl'>Need help finding <br/> an accomodation?</h3>,
-            guestInfo: "Guests information"
+            guestInfo: "Guests info"
  
         }
     }

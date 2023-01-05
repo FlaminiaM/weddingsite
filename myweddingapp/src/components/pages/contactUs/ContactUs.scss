@@ -14,9 +14,12 @@
     & .guests-info{
         display: flex;
         align-items: center;
+        justify-content: center;
         & h4{
             text-decoration: underline;
             margin-left: toRem(10);
+            cursor: pointer;
+            font-weight: bold;
         }
     }
 }

@@ -1,6 +1,11 @@
+@import '../../../styles/_mixins';
 .title-with-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    &-text{
+        margin-right: toRem(8);
+    }
 }
