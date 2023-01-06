@@ -1,7 +1,0 @@
-BUGS:
-- Side drawer closes on load - it should be hidden on load
-- Fix mobile designs
-
-FEATURES:
-- Add number of people field and their names.
-- animate mobile images
