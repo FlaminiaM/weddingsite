@@ -40,6 +40,10 @@ export const attendanceOptions = {
 export const dietaryRequirementsOptions = {
     italian:[
         {
+            label: "Nessuno",
+            value: "none"
+        },
+        {
             label: "Senza Glutine",
             value: "glutenfree"
         },
@@ -57,6 +61,10 @@ export const dietaryRequirementsOptions = {
         }
     ],
     english:[
+        {
+            label: "Nothing to mention",
+            value: "none"
+        },
         {
             label: "Gluten free",
             value: "glutenfree"
