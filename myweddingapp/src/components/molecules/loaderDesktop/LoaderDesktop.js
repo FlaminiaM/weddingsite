@@ -2,7 +2,7 @@ import React from 'react';
 import './LoaderDesktop.scss';
 
 import us from '../../../assets/images/us.png'
-import worldbg from '../../../assets/images/world-bg.png'
+import worldbg from '../../../assets/images/world-bg.jpg'
 
 function LoaderDesktop() {
 
