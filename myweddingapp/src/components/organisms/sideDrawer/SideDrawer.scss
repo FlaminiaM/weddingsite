@@ -64,6 +64,7 @@
         width: 100%;
         padding-right: toRem(32);
         padding-top: toRem(4);
+        display: block;
         
         @include lgMinBreakPoint {
             padding-top: toRem(16);

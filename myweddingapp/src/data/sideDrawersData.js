@@ -18,7 +18,7 @@ export const sideDrawersData = {
                     {
                         title: <TitleWithIcon type="secondary" sectionTitle="Dall'estero" icon={<Image classes="ml-xl" name="plane" type="png" size="small"/>}/>,
                         content: <div className='location-info-directions-section-content'>
-                            <p className='mt-md'>Rimini, Ancona e Bologna sono gli aeroporti più vicini, vi consigliamo di affittare una macchina ad uno di questi aeroporti:</p>
+                            <p className='mt-md'>Rimini, Ancona e Bologna sono gli aeroporti più vicini, vi consigliamo di affittare una macchina in uno di questi aeroporti:</p>
                             <ul className='mb-xl'>
                                 <li className='mt-md mb-md'><a rel="noreferrer" target="_blank" href='https://riminiairport.com/'>Aeroporto di Rimini</a> - 57km da Urbino.</li>
                                 <li className='mt-md mb-md'><a rel="noreferrer" target="_blank" href='https://www.ancona-airport.com/'>Aeroporto di Ancona</a> - 89km da Urbino.</li>
@@ -27,13 +27,13 @@ export const sideDrawersData = {
                         </div>
                     },
                     {
-                        title: <TitleWithIcon type="secondary" sectionTitle="In Auto" icon={<Image classes="ml-xl" name="car" type="png" size="small"/>}/>,
+                        title: <TitleWithIcon type="secondary" sectionTitle="In auto" icon={<Image classes="ml-xl" name="car" type="png" size="small"/>}/>,
                         content: <div className='location-info-directions-section-content'><p className='mt-lg'>Da Rimini/Bologna: prendete l’A14 in direzione Ancona, uscite a “Pesaro-Urbino” e seguite la SP423 verso Urbino per 40 minuti circa.</p><p className='mt-lg mb-xl'>Da Ancona: prendete l’A14 in direzione Bologna, uscite a “Fano” e tenete la destra per imboccare la SS73bis verso Urbino guidando per 40 minuti circa.</p></div>
                     },
                     {
                         title: <TitleWithIcon type="secondary" sectionTitle="Parcheggio" icon={<Image classes="ml-xl" name="parking" type="png" size="xsmall"/>}/>,
                         content: <div className='location-info-directions-section-content'>
-                            <p className='mt-md mb-xl'>Urbino si trova su un colle molto ripido con divieto di accesso al centro storico in auto. I parcheggi a pagamento offrono l’accesso più facile al centro storico, e sono muniti di ascensori.</p>
+                            <p className='mt-md mb-xl'>Urbino si trova su un colle molto ripido con divieto di accesso al centro storico in auto. I parcheggi a pagamento offrono l’accesso più facile al centro storico e sono muniti di ascensori.</p>
                             <p className='paid-parking-info'><a rel="noreferrer" target="_blank" href='https://goo.gl/maps/MUEep6Q5bPjWrEnv5'>Borgo Mercatale</a> Prezzo: €1.50 all'ora (€12 forfettario).</p> <p>Ascensore: €0.50</p>
                             <p className='mt-lg paid-parking-info'><a rel="noreferrer" target="_blank"  href='https://goo.gl/maps/eGmAmTBaaKxU2ue69'>Centro Commerciale Santa Lucia</a> Prezzo: 1a ora €1.50, 2a ora €1.20, 3a ora e successive €1 (€10 forfettario). </p> <p>Ascensore gratuito, parcheggio coperto.</p>
                             <p className='mt-xl mb-lg'>Parcheggi gratuiti: situati fuori dalle mura, preparatevi ad affrontare discese e salite molto ripide per raggiungere il centro storico!</p>
@@ -44,7 +44,7 @@ export const sideDrawersData = {
                     },
                     {
                         title: <TitleWithIcon type="secondary" sectionTitle="Trasporto pubblico" icon={<Image classes="ml-xl" name="bus" type="png" size="small"/>}/>,
-                        content: <div className='location-info-directions-section-content'><p className='mt-md mb-xl'>Vi sconsigliamo di usare i transporti pubblici: nonostante sia possibile raggiungere Urbino in autobus, non ci sono collegamenti con mezzi pubblici per Casa Londei.</p></div>
+                        content: <div className='location-info-directions-section-content'><p className='mt-md mb-xl'>Vi sconsigliamo di usare i trasporti pubblici: nonostante sia possibile raggiungere Urbino in autobus, non ci sono collegamenti con mezzi pubblici per Casa Londei.</p></div>
                     },
                 ]
             },
@@ -63,7 +63,7 @@ export const sideDrawersData = {
                 sections: [
                     {
                         title: <TitleWithIcon type="secondary" sectionTitle="In auto" icon={<Image classes="ml-xl" name="car" type="png" size="small"/>}/>,
-                        content: <p className='mt-md mb-xl'>Da Urbino, seguite la SS73bis in direzione Fano, uscite a "St.Ippolito" e prendete Via Serra/Strada Provinciale 5 fino a Via Reforzate.</p>
+                        content: <p className='mt-md mb-xl'>Da Urbino seguite la SS73bis in direzione Fano, uscite a "St.Ippolito" e prendete Via Serra/Strada Provinciale 5 fino a Via Reforzate.</p>
                     },
                     {
                         title: <TitleWithIcon type="secondary" sectionTitle="Parcheggio" icon={<Image classes="ml-xl" name="parking" type="png" size="xsmall"/>}/>,
@@ -84,12 +84,6 @@ export const sideDrawersData = {
                     name: 'Tag Hotel',
                     city: 'Fano',
                     link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
-                    linkText: 'Scopri di più'
-                },
-                {
-                    name: 'Le Fontanelle Country House',
-                    city: "Sant'Ippolito (PU)",
-                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
                     linkText: 'Scopri di più'
                 },
                 {
@@ -227,12 +221,6 @@ export const sideDrawersData = {
                     name: 'Tag Hotel',
                     city: 'Fano',
                     link: 'https://maps.app.goo.gl/g6ajicEvrfQtdsGy7',
-                    linkText: 'Find out more'
-                },
-                {
-                    name: 'Le Fontanelle Country House',
-                    city: "Sant'Ippolito (PU)",
-                    link: 'https://maps.app.goo.gl/JMarfxmzS8xzboZx9',
                     linkText: 'Find out more'
                 },
                 {
