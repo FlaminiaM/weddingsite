@@ -15,7 +15,7 @@ function Accomodation({isItalian}) {
         <div className='accomodation-options mb-lg'>
           {
             content.options.map((option, i) => (
-              <a href={option.link} key={i} className='accomodation-option'>
+              <a target="_blank" href={option.link} key={i} className='accomodation-option'>
                 <h3>{option.name}</h3>
                 <h4>{option.city}</h4>
                 <p class='accomodation-option-findmore'> {option.linkText}</p>
