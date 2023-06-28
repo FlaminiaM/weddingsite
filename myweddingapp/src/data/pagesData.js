@@ -207,7 +207,7 @@ export const pagesContent = {
         home: <>
             <h3 className='mb-lg mt-lg'>Con gioia vi invitiamo al nostro matrimonio</h3>
             <h2 className='mb-sm mt-lg'>Sabato, 8 Luglio 2023</h2>
-            <h3>ore 16:00</h3>
+            <h3>ore 15:30</h3>
             <h3 className='mb-xxl mt-lg'>Cattedrale di Santa Maria Assunta <br/> Urbino (PU)</h3>
             </>,
         locations: {
@@ -215,7 +215,7 @@ export const pagesContent = {
                 sectionTitle:"Cerimonia", 
                 venuName:"Cattedrale di Santa Maria Assunta",
                 venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU)",
-                time: 'ore 16:00',
+                time: 'ore 15:30',
                 linkText :"Vedi dettagli"
             },
             venue:{
@@ -229,7 +229,7 @@ export const pagesContent = {
         timeline:[
             {
                 label:"Cerimonia",
-                time:"16:00",
+                time:"15:30",
                 icon: "church",
                 position: "left"
             },
@@ -253,7 +253,7 @@ export const pagesContent = {
             },
             {
                 label:"Party - <br/>Open Bar",
-                time:"23:00",
+                time:"23:30",
                 icon: "party",
                 position: "left"
             },
@@ -280,7 +280,7 @@ export const pagesContent = {
         home: <>
             <h3 className='mb-lg mt-lg'>We are happy to invite you to our wedding</h3>
             <h2 className='mb-sm mt-lg'>Saturday, 8th July 2023</h2>
-            <h3>at 4:00pm</h3>
+            <h3>at 3:30pm</h3>
             <h3 className='mb-xxl mt-lg'>Cattedrale di Santa Maria Assunta <br/> Urbino (Italy)</h3>
         </>,    
         locations: {
@@ -288,7 +288,7 @@ export const pagesContent = {
                 sectionTitle:"Ceremony", 
                 venuName:"Cattedrale di Santa Maria Assunta",
                 venueAddress:"Via Puccinotti, 29, 61029 <br/> Urbino (PU) Italy",
-                time: 'at 4:00pm',
+                time: 'at 3:30pm',
                 linkText :"View details"
             },
             venue:{
@@ -302,7 +302,7 @@ export const pagesContent = {
         timeline:[
             {
                 label:"Wedding <br/> Ceremony",
-                time:"4:00pm",
+                time:"3:30pm",
                 icon: "church",
                 position: "left"
             },
@@ -326,7 +326,7 @@ export const pagesContent = {
             },
             {
                 label:"Party - <br/>Open Bar",
-                time:"11:00pm",
+                time:"11:30pm",
                 icon: "party",
                 position: "left"
             },
