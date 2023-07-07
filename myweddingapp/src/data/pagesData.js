@@ -229,13 +229,13 @@ export const pagesContent = {
         timeline:[
             {
                 label:"Cerimonia",
-                time:"15:30",
+                time:"15:45",
                 icon: "church",
                 position: "left"
             },
             {
                 label:"Foto",
-                time:"17:30",
+                time:"18:00",
                 icon: "camera",
                 position: "right"
             },
@@ -247,7 +247,7 @@ export const pagesContent = {
             },
             {
                 label:"Cena",
-                time:"20:00",
+                time:"20:30",
                 icon: "dinner",
                 position: "right"
             },
@@ -302,13 +302,13 @@ export const pagesContent = {
         timeline:[
             {
                 label:"Wedding <br/> Ceremony",
-                time:"3:30pm",
+                time:"3:45pm",
                 icon: "church",
                 position: "left"
             },
             {
                 label:"Photos",
-                time:"5:30pm",
+                time:"6pm",
                 icon: "camera",
                 position: "right"
             },
@@ -320,7 +320,7 @@ export const pagesContent = {
             },
             {
                 label:"Dinner",
-                time:"8:00pm",
+                time:"8:30pm",
                 icon: "dinner",
                 position: "right"
             },
